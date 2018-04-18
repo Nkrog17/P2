@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/StartScreen.unity
+    guid: 455e598dd791dec4eab1132b1d96e361
+  - enabled: 1
+    path: Assets/_Scenes/PoliciStation.unity
+    guid: 5d39fb8051aadd644aa809945c97c413
