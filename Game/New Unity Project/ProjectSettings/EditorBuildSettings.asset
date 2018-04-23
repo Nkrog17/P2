@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/PoliciStation.unity
     guid: 5d39fb8051aadd644aa809945c97c413
+  - enabled: 1
+    path: Assets/_Scenes/Greven'sEntrance.unity
+    guid: a133f57e35fe323449d180faa08daf00

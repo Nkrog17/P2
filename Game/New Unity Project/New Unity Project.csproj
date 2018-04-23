@@ -286,6 +286,8 @@
     <Compile Include="Assets\Scripts\ClickableObjects.cs" />
     <Compile Include="Assets\Scripts\opAdTrappenBehaviour.cs" />
     <Compile Include="Assets\Scripts\PhoneBehaviour.cs" />
+    <Compile Include="Assets\Scripts\TextManager.cs" />
+    <Compile Include="Assets\Scripts\Texts.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
