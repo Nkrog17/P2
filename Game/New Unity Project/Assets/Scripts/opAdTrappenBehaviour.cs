@@ -9,13 +9,9 @@ public class opAdTrappenBehaviour : MonoBehaviour {
     public int SceneNum;
     public int activeScene;
 
-    void behaviour()
+    private void OnMouseDown()
     {
-
-        if (GetComponent<ClickableObjects>().OnMouseDown())
-        {
-            activeScene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(SceneNum);
-        }
+        activeScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(SceneNum);
     }
 }

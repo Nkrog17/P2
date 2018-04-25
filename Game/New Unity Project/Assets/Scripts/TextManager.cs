@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TextManager : MonoBehaviour {
 
-    public Texts txt;
-	// Use this for initialization
-	void Start () {
+    public TextsMethods txt;
+    public GameObject vis;
+    public bool firstAn = true;
+
+    public object Texts { get; internal set; }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -15,19 +20,30 @@ public class TextManager : MonoBehaviour {
 	void Update () {
         //Scene 1: PoliceStation
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            txt.setText1("Answer1");
-            txt.setText2("Answer2");
-            txt.setText3("Answer3");
+            if (firstAn == true)
+            {
+                txt.setText1("Answer1");
+                txt.setText2("Answer2");
+                txt.setText3("Answer3");
+                firstAn = false;
+            }
 
             txt.setQuestion("Question");
 
-            if (Input.GetMouseButtonDown(0))
+            if (txtBehavior.button1)
             {
-                txt.turnOffObject();
+                Debug.Log("Button1Clicked 1");
+                txtBehavior.button1 = false;
             }
-            if (Input.GetMouseButtonDown(1))
+            else if (txtBehavior.button2)
             {
-                txt.turnOnObject();
+                Debug.Log("Button1Clicked 2");
+                txtBehavior.button2 = false;
+            }
+            else if (txtBehavior.button3) {
+                Debug.Log("Button1Clicked 3");
+                txt.setText3("nej!");
+                txtBehavior.button3 = false;
             }
         }
         //Scene 2: GrenevsIntrance

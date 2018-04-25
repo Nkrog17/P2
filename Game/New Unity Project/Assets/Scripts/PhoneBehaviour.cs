@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PhoneBehaviour : MonoBehaviour {
 
-    public ClickableObjects Object;
+    public GameObject change;
 
 
-    void behaviour() {
-        
-        if (GetComponent<ClickableObjects>().OnMouseDown()) {
-
-        }
+    void OnMouseDown()
+    {
+            change.GetComponent<TextsMethods>().turnOnObject();
+            //change.SetActive(true);
     }
 }
