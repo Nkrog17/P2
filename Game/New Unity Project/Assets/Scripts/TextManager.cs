@@ -30,7 +30,7 @@ public class TextManager : MonoBehaviour {
                 
             }
 
-            if (An == 2 || An == 3)
+            if (An == 2 || An == 11)
             {
                 txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Hun kunne aldrig finde på at stikke af midt om natten”");
                 txt.setText1("");
@@ -40,7 +40,7 @@ public class TextManager : MonoBehaviour {
 
             }
 
-            if (An == 4)
+            if (An == 101)
             {
                 txt.setQuestion("“Jamen… Du er nødt til at hjælpe!Mit navn er Christian Møller.Jeg er bange for der er sket hende noget”");
                 txt.setText1("“Okay Hr. Møller. Jeg gør hvad jeg kan, for at komme så hurtigt som muligt - din adresse?”");
@@ -48,7 +48,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("“Hvis du giver mig din adresse, så kommer jeg med det samme.”");
             }
 
-            if (An >= 5)
+            if (An >= 102 || An == 21 || An == 12)
             {
                 txt.setQuestion("“Svanemøllen 3. Tak - tusinde tak!”");
                 txt.setText1("");
@@ -61,19 +61,19 @@ public class TextManager : MonoBehaviour {
             {
                 Debug.Log("Button1Clicked 1");
                 txtBehavior.button1 = false;
-                An = An+2;
+                An++;
             }
             else if (txtBehavior.button2)
             {
                 Debug.Log("Button1Clicked 2");
                 txtBehavior.button2 = false;
-                An = An+2;
+                An = An+10;
             }
             else if (txtBehavior.button3) {
                 Debug.Log("Button1Clicked 3");
                 txt.setText3("nej!");
                 txtBehavior.button3 = false;
-                An = An+3;
+                An = An+100;
             }
         }
         //Scene 2: GrenevsIntrance
