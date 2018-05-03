@@ -9,7 +9,7 @@ public class ButtonWithSceneIndexAsAug : MonoBehaviour {
     public int SceneNum;
     public int activeScene;
 
-    public void buttonClicked() {
+    public void OnMouseDown() {
 
         activeScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(SceneNum);

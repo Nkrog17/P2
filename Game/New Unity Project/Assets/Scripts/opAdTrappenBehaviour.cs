@@ -5,13 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class opAdTrappenBehaviour : MonoBehaviour {
 
+    public bool light = false; 
 
-    public int SceneNum;
+    public int SceneNumLight;
+    public int SceneNumNoLight;
     public int activeScene;
 
     private void OnMouseDown()
     {
         activeScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(SceneNum);
+        if (light)
+            SceneManager.LoadScene(SceneNumLight);
+
+        else
+            SceneManager.LoadScene(SceneNumNoLight);
+
     }
 }

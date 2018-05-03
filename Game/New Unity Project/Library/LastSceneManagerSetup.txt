@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/puzzlesDNA.unity
+- path: Assets/_Scenes/Greven'sEntrance.unity
   isLoaded: 1
   isActive: 1
