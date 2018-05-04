@@ -282,10 +282,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Power.cs" />
     <Compile Include="Assets\Scripts\ButtonWithSceneIndexAsAug.cs" />
     <Compile Include="Assets\Scripts\opAdTrappenBehaviour.cs" />
     <Compile Include="Assets\Scripts\PhoneBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Power.cs" />
     <Compile Include="Assets\Scripts\TextManager.cs" />
     <Compile Include="Assets\Scripts\TextsMethods.cs" />
     <Compile Include="Assets\Scripts\txtBehavior.cs" />
