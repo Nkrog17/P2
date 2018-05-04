@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class opAdTrappenBehaviour : MonoBehaviour {
 
-    public bool light = false; 
+   static  public bool light = false; 
 
     public int SceneNumLight;
     public int SceneNumNoLight;
@@ -21,4 +21,6 @@ public class opAdTrappenBehaviour : MonoBehaviour {
             SceneManager.LoadScene(SceneNumNoLight);
 
     }
+
+    
 }

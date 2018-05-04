@@ -282,6 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Power.cs" />
     <Compile Include="Assets\Scripts\ButtonWithSceneIndexAsAug.cs" />
     <Compile Include="Assets\Scripts\opAdTrappenBehaviour.cs" />
     <Compile Include="Assets\Scripts\PhoneBehaviour.cs" />

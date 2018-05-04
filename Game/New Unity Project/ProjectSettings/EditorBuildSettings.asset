@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/DaughtersRoomLight.unity
     guid: efac49327c7777441890cc86b2568d72
+  - enabled: 1
+    path: "Assets/_Scenes/K\xE6lder.unity"
+    guid: 60ace9d2e2d80da4a843e5f52019f839
