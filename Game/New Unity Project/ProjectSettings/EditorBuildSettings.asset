@@ -23,3 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/_Scenes/K\xE6lder.unity"
     guid: 60ace9d2e2d80da4a843e5f52019f839
+  - enabled: 1
+    path: Assets/_Scenes/Laboratorie.unity
+    guid: 72d048b7f298b134c96a304bf84aa46d
+  - enabled: 1
+    path: Assets/_Scenes/puzzlesDNA.unity
+    guid: 3a357e12c28c2354da393ad67e881427
+  - enabled: 1
+    path: "Assets/_Scenes/SortSceneF\xF8rUlrick.unity"
+    guid: b114eca58f52ff2458d61f55baca6432
