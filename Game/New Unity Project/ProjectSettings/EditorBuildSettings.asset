@@ -44,3 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/tank.unity
     guid: 75ec6504192be124cac6ef6550bb88d6
+  - enabled: 1
+    path: Assets/_Scenes/puzzlesMath.unity
+    guid: 4d4be1add4c406c44a24d49b5b765598
