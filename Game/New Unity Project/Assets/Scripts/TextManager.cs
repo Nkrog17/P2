@@ -9,6 +9,8 @@ public class TextManager : MonoBehaviour {
     public GameObject vis;
     public int An = 1;
 
+    static public bool conversationEnd;
+
     public object Texts { get; internal set; }
 
     // Use this for initialization
@@ -21,9 +23,11 @@ public class TextManager : MonoBehaviour {
         //Scene 1: PoliceStation
         if (SceneManager.GetActiveScene().buildIndex == 1) {
             txt.setQuestion("“MIN DATTER! Hun… hun.. Hun er væk!”");
+            
 
             if (An == 1)
             {
+                conversationEnd = false;
                 txt.setText1("“Væk?“");
                 txt.setText2("“Rolig nu - er du helt sikker på det?”");
                 txt.setText3("“Sæt lige tempoet ned - dit navn?”");
@@ -54,36 +58,40 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("");
                 txt.setText2("");
                 txt.setText3("");
+                conversationEnd = true;
             }
 
 
-            if (txtBehavior.button1)
-            {
-                Debug.Log("Button1Clicked 1");
-                txtBehavior.button1 = false;
-                An++;
-            }
-            else if (txtBehavior.button2)
-            {
-                Debug.Log("Button1Clicked 2");
-                txtBehavior.button2 = false;
-                An = An+10;
-            }
-            else if (txtBehavior.button3) {
-                Debug.Log("Button1Clicked 3");
-                txt.setText3("nej!");
-                txtBehavior.button3 = false;
-                An = An+100;
-            }
+            
         }
         //Scene 2: GrenevsIntrance
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            txt.setText1("Answer1");
-            txt.setText2("Answer2");
-            txt.setText3("Answer3");
+            An = 1;
 
-            txt.setQuestion("Question");
+            if (An == 1)
+            {
+                conversationEnd = false;
+                txt.turnOnObject();
+                txt.setText1("Answer1");
+                txt.setText2("Answer2");
+                txt.setText3("Answer3");
+                txt.setQuestion("");
+            }
+
+            if (An == 2)
+            {
+                txt.setText1("");
+                txt.setText2("");
+                txt.setQuestion("");
+            }
+
+            if (An > 2)
+            {
+                txt.setQuestion("");
+                txt.setText1("");
+                txt.setText3("");
+            }
         }
         //Scene 3
         else if (SceneManager.GetActiveScene().buildIndex == 3)
@@ -103,5 +111,28 @@ public class TextManager : MonoBehaviour {
 
             txt.setQuestion("Question");
         }
+
+
+        //Button behavior
+        if (txtBehavior.button1)
+        {
+            Debug.Log("Button1Clicked 1");
+            txtBehavior.button1 = false;
+            An++;
+        }
+        else if (txtBehavior.button2)
+        {
+            Debug.Log("Button1Clicked 2");
+            txtBehavior.button2 = false;
+            An = An + 10;
+        }
+        else if (txtBehavior.button3)
+        {
+            Debug.Log("Button1Clicked 3");
+            txt.setText3("nej!");
+            txtBehavior.button3 = false;
+            An = An + 100;
+        }
     }
+
 }

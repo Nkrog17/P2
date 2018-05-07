@@ -11,7 +11,10 @@ public class ButtonWithSceneIndexAsAug : MonoBehaviour {
 
     public void OnMouseDown() {
 
-        activeScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(SceneNum);
-    }
+        if (TextManager.conversationEnd == true)
+        {
+            activeScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(SceneNum);
+        }
+    }   
 }
