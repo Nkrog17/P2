@@ -13,14 +13,16 @@ public class opAdTrappenBehaviour : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        activeScene = SceneManager.GetActiveScene().buildIndex;
-        if (light)
-            SceneManager.LoadScene(SceneNumLight);
+        if (TextManager.conversationEnd)
+        {
+            activeScene = SceneManager.GetActiveScene().buildIndex;
+            if (light)
+                SceneManager.LoadScene(SceneNumLight);
 
-        else
-            SceneManager.LoadScene(SceneNumNoLight);
+            else
+                SceneManager.LoadScene(SceneNumNoLight);
 
+        }
     }
-
     
 }

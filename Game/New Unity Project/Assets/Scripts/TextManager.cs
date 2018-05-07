@@ -7,7 +7,8 @@ public class TextManager : MonoBehaviour {
 
     public TextsMethods txt;
     public GameObject vis;
-    public int An = 1;
+    static public int An = 1;
+    public int AnScene2;
 
     static public bool conversationEnd;
 
@@ -67,30 +68,31 @@ public class TextManager : MonoBehaviour {
         //Scene 2: GrenevsIntrance
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            An = 1;
+            txt.turnOnObject();
 
-            if (An == 1)
+            if (AnScene2 == 1)
             {
                 conversationEnd = false;
                 txt.turnOnObject();
-                txt.setText1("Answer1");
-                txt.setText2("Answer2");
-                txt.setText3("Answer3");
-                txt.setQuestion("");
-            }
-
-            if (An == 2)
-            {
-                txt.setText1("");
+                txt.setText1("“Godaften - du må være Hr. Møller.”");
                 txt.setText2("");
+                txt.setText3("“Godt, vil du være så venlig at vise mig rummet, hvor hun sidst befandt sig?”");
                 txt.setQuestion("");
             }
 
-            if (An > 2)
+            if (AnScene2 == 2)
             {
-                txt.setQuestion("");
+                txt.setText1("“Det er mit arbejde.”");
+                txt.setText3("“Selvfølgelig. Vil gøre mit bedste for at finde ud af, hvad der sket.”");
+                txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
+            }
+
+            if (AnScene2 > 2)
+            {
+                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset.”");
                 txt.setText1("");
                 txt.setText3("");
+                conversationEnd = true;
             }
         }
         //Scene 3
