@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneNum: 5
   activeScene: 2
+  swithcScene: 1
 --- !u!65 &145945339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -543,7 +544,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1546483240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 975dfdd784cae194c810863d578c17b4, type: 3}
   m_Name: 
@@ -662,6 +663,11 @@ Prefab:
     - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114801461792897654, guid: da3d3c707368acf468c94809cda37048,
+        type: 2}
+      propertyPath: AnScene2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da3d3c707368acf468c94809cda37048, type: 2}

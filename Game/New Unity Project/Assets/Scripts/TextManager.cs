@@ -8,7 +8,7 @@ public class TextManager : MonoBehaviour {
     public TextsMethods txt;
     public GameObject vis;
     static public int An = 1;
-    public int AnScene2;
+    static public int AnScene2 = 1;
 
     static public bool conversationEnd;
 
@@ -83,6 +83,7 @@ public class TextManager : MonoBehaviour {
             if (AnScene2 == 2)
             {
                 txt.setText1("“Det er mit arbejde.”");
+                txt.setText2("");
                 txt.setText3("“Selvfølgelig. Vil gøre mit bedste for at finde ud af, hvad der sket.”");
                 txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
             }
@@ -91,6 +92,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset.”");
                 txt.setText1("");
+                txt.setText2("");
                 txt.setText3("");
                 conversationEnd = true;
             }
@@ -98,11 +100,13 @@ public class TextManager : MonoBehaviour {
         //Scene 3
         else if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-            txt.setText1("Answer1");
-            txt.setText2("Answer2");
-            txt.setText3("Answer3");
+            txt.turnOnObject();
+            txt.setText1("");
+            txt.setText2("");
+            txt.setText3("");
 
-            txt.setQuestion("Question");
+            txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.s");
+            conversationEnd = true;
         }
         //Scene 4
         else if (SceneManager.GetActiveScene().buildIndex == 4)
@@ -114,6 +118,19 @@ public class TextManager : MonoBehaviour {
             txt.setQuestion("Question");
         }
 
+        else if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            txt.turnOnObject();
+            txt.setText1("");
+            txt.setText2("");
+            txt.setText3("");
+            conversationEnd = true;
+
+            if (opAdTrappenBehaviour.light)
+                txt.setQuestion("Jeg har slået strømmen til på værelset igen. Nu burde lyset virke.");
+            else
+                txt.setQuestion("Det ser ud til, at lyset til værelset ovenpå, er blevet afbrudt herfra.");
+        }
 
         //Button behavior
         if (txtBehavior.button1)
@@ -121,12 +138,16 @@ public class TextManager : MonoBehaviour {
             Debug.Log("Button1Clicked 1");
             txtBehavior.button1 = false;
             An++;
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+                AnScene2++;
         }
         else if (txtBehavior.button2)
         {
             Debug.Log("Button1Clicked 2");
             txtBehavior.button2 = false;
             An = An + 10;
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+                AnScene2 = AnScene2 + 10;
         }
         else if (txtBehavior.button3)
         {
@@ -134,6 +155,8 @@ public class TextManager : MonoBehaviour {
             txt.setText3("nej!");
             txtBehavior.button3 = false;
             An = An + 100;
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+                AnScene2 = AnScene2 + 100;
         }
     }
 
