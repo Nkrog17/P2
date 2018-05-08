@@ -328,7 +328,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 106412afbe528e94899798c5ebe2b27f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af7d3e0ab6440cd46aff7f65399eedac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -577,7 +577,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 88cec2757d6b78a4e951067db8fad606, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8f53f015e3efa14d97879b1f58b6f6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -678,7 +678,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 53dec4a668e6e384cbc0fea6612c25fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de48ba60fe3517648b6d66a990fd4663, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1221,6 +1221,7 @@ MonoBehaviour:
   errorstring: {fileID: 1671018934}
   randomentries: {fileID: 1428340800}
   ulrikentry: {fileID: 1871051627}
+  puzzledone: 0
 --- !u!4 &1072945872
 Transform:
   m_ObjectHideFlags: 0
@@ -1286,7 +1287,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 045d1a54c5366e4409cf1468c3c05bb0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c87861d1d21e17c4fa7ca8d8b432ea0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1891,7 +1892,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f872fef8b41f46746bf4324022928bc5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a88d9873c1433854cb79cecd70549810, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2329,7 +2330,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c3b8c7cc89d3cf44b8e2ccb304b2dbe0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2328d09c11c302d46a15604628ae7990, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
