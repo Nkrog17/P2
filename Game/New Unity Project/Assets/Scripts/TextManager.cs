@@ -188,7 +188,102 @@ public class TextManager : MonoBehaviour {
         //Scene 10: Politistation programering
         else if (SceneManager.GetActiveScene().buildIndex == 10)
         {
+            txt.setQuestion("Hej, jeg hører, at du er på sporet af en bil.");
 
+            if (An == 1){
+                conversationEnd = false;
+                txt.setText1("Ja, kan du hjælpe mig, Amalie?");
+                txt.setText2("");
+                txt.setText3("Jeg er på bar bund, Amalie!");
+            }
+
+            if (An == 2 || An == 101){
+                txt.setQuestion("Hvis du har den mistænktes navn, kan vi måske finde frem til hans bil."); 
+                txt.setText1("Hvordan det?");
+                txt.setText2("");
+                txt.setText3("Jeg har kun hans navn.");
+            }
+
+            if (An == 3 || An == 102 || An == 201 || An == 1000 || An == 1211 || An == 1122){
+                An = 1000
+                txt.setQuestion("Du kan finde hans nummerplade i vores database med registrerede personbiler. Imens får jeg adgang til overvågningskameraer i området.");
+                txt.setText1("Hvad er en database?");
+                txt.setText2("");
+                txt.setText3("Hvor starter jeg?");
+            }
+
+            if (An == 1001){
+                txt.setQuestion("En database er et system til at opbevare information. Den består af tabeller, som kan sorteres efter, hvad du vil finde.");
+                txt.setText1("");
+                txt.setText2("Hvor starter jeg?");
+                txt.setText3("");
+            }
+
+            if (An == 1100 || An == 1011){
+                txt.setQuestion("Du skal blot skrive en enkelt sætning i SQL, som er et programmeringssprog, som kan sortere tabeller i databaser.");
+                txt.setText1("");
+                txt.setText2("Men jeg kender ikke SQL!");
+                txt.setText3("");
+            }
+
+            if (An == 1110 || An == 1021){
+                txt.setQuestion("Det er ret simpelt. Først vælger du den tabel du vil sortere, derefter, hvad du leder efter. Vil du have et eksempel på, hvordan det kunne se ud?");
+                txt.setText1("Ja tak.");
+                txt.setText2("");
+                txt.setText3("Nej tak.");
+            }
+
+            if (An == 1111 || An == 1022){
+                txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med?");
+                txt.setText1("Lad os komme i gang!");
+                txt.setText2("");
+                txt.setText3("Fortæl mig det en gang til.")
+            }
+
+            if (An == 1210 || An == 1121 || An == 1112 || An == 1023){
+                conversationEnd = true;
+            }
+            if (An == 1)
+            {
+                conversationEnd = false;
+                txt.turnOnObject();
+
+                txt.setQuestion("“Hej, hvad kan jeg hjælpe dig med?”");
+                txt.setText1("");
+                txt.setText2("“Hej Victoria, jeg har fundet noget bevismateriale, som skal analyseres.”");
+                txt.setText3("");
+            }
+
+            if (An == 11)
+            {
+                txt.setQuestion("“Vi kan undersøge DNA fra disse hår. Alle mennesker har unik DNA, så vi kan måske finde frem til gerningsmanden. Vi har travlt, så jeg har brug for din hjælp til at analysere det.”");
+                txt.setText1("“Hvordan fungere DNA?”");
+                txt.setText2("");
+                txt.setText3("“Hvad skal jeg gøre?”");
+            }
+             
+            if (An == 12)
+            {
+                txt.setQuestion("“DNA består af fire aminosyrer, som vi kalder A, T, C og G. A og T hænger sammen, mens G og C hænger sammen. Ligesom et puslespil.”");
+                txt.setText1("");
+                txt.setText2("“Okay.”");
+                txt.setText3("");
+            }
+
+            if (An == 22 || An == 111)
+            {
+                txt.setQuestion("“Din opgave er, at sammensætte de forskellige aminosyrer, A, T, C og G. Så analyserer jeg det sidste. Tryk på mikroskopet når du er klar.”");
+                txt.setText1("");   
+                txt.setText2("“Okay.”");
+                txt.setText3("");
+                conversationEnd = true;
+
+            }
+
+            if (An >= 22 && An !=111)
+            {
+                txt.turnOffObject();
+            }
         }
 
         //Scene 12: tank
