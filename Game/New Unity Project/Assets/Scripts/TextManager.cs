@@ -97,7 +97,7 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = true;
             }
         }
-        //Scene 3
+        //Scene 3: væresle uden lys
         else if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             txt.turnOnObject();
@@ -108,7 +108,7 @@ public class TextManager : MonoBehaviour {
             txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.s");
             conversationEnd = true;
         }
-        //Scene 4
+        //Scene 4: Værelse med lys
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             txt.setText1("Answer1");
@@ -118,6 +118,7 @@ public class TextManager : MonoBehaviour {
             txt.setQuestion("Question");
         }
 
+        //Scene 5: Kælder
         else if (SceneManager.GetActiveScene().buildIndex == 5)
         {
             txt.turnOnObject();
@@ -130,6 +131,36 @@ public class TextManager : MonoBehaviour {
                 txt.setQuestion("Jeg har slået strømmen til på værelset igen. Nu burde lyset virke.");
             else
                 txt.setQuestion("Det ser ud til, at lyset til værelset ovenpå, er blevet afbrudt herfra.");
+        }
+
+        //Scene 6: Laboratorie
+        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+
+        }
+
+        //Scene 9: Ulriks hjem
+        else if (SceneManager.GetActiveScene().buildIndex == 9)
+        {
+
+        }
+
+        //Scene 10: Politistation programering
+        else if (SceneManager.GetActiveScene().buildIndex == 10)
+        {
+
+        }
+
+        //Scene 12: tank
+        else if (SceneManager.GetActiveScene().buildIndex == 12)
+        {
+            
+        }
+
+        //Scene 14: Lade
+        else if (SceneManager.GetActiveScene().buildIndex == 14)
+        {
+
         }
 
         //Button behavior
