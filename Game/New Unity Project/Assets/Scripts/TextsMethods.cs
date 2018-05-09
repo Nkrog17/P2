@@ -22,14 +22,38 @@ public class TextsMethods : MonoBehaviour {
         one.text = aug;
        }
 
+    public bool text1empty()
+    {
+        if (one.text == "")
+            return false;
+        else
+            return true;
+    }
+
     public void setText2 (string aug)
     {
         two.text = aug;
     }
 
+    public bool text2empty()
+    {
+        if (two.text == "")
+            return false;
+        else
+            return true;
+    }
+
     public void setText3(string aug)
     {
         three.text = aug;
+    }
+
+    public bool text3empty()
+    {
+        if (three.text == "")
+            return false;
+        else
+            return true;
     }
 
     public void setQuestion(string aug)
