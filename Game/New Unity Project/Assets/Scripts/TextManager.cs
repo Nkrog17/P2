@@ -136,6 +136,61 @@ public class TextManager : MonoBehaviour {
         //Scene 6: Laboratorie
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
+        	txt.setQuestion("Hej, jeg hører, at du er på sporet af en bil.");
+
+        	if (An == 1){
+        		conversationEnd = false;
+        		txt.setText1("Ja, kan du hjælpe mig, Amalie?");
+        		txt.setText2("");
+        		txt.setText3("Jeg er på bar bund, Amalie!");
+        	}
+
+        	if (An == 2 || An == 101){
+        		txt.setQuestion("Hvis du har den mistænktes navn, kan vi måske finde frem til hans bil."); 
+        		txt.setText1("Hvordan det?");
+        		txt.setText2("");
+        		txt.setText3("Jeg har kun hans navn.");
+        	}
+
+        	if (An == 3 || An == 102 || An == 201 || An == 1000 || An == 1211 || An == 1122){
+        		An = 1000
+        		txt.setQuestion("Du kan finde hans nummerplade i vores database med registrerede personbiler. Imens får jeg adgang til overvågningskameraer i området.");
+        		txt.setText1("Hvad er en database?");
+        		txt.setText2("");
+        		txt.setText3("Hvor starter jeg?");
+        	}
+
+        	if (An == 1001){
+        		txt.setQuestion("En database er et system til at opbevare information. Den består af tabeller, som kan sorteres efter, hvad du vil finde.");
+        		txt.setText1("");
+        		txt.setText2("Hvor starter jeg?");
+        		txt.setText3("");
+        	}
+
+        	if (An == 1100 || An == 1011){
+        		txt.setQuestion("Du skal blot skrive en enkelt sætning i SQL, som er et programmeringssprog, som kan sortere tabeller i databaser.");
+        		txt.setText1("");
+        		txt.setText2("Men jeg kender ikke SQL!");
+        		txt.setText3("");
+        	}
+
+        	if (An == 1110 || An == 1021){
+        		txt.setQuestion("Det er ret simpelt. Først vælger du den tabel du vil sortere, derefter, hvad du leder efter. Vil du have et eksempel på, hvordan det kunne se ud?");
+        		txt.setText1("Ja tak.");
+        		txt.setText2("");
+        		txt.setText3("Nej tak.");
+        	}
+
+        	if (An == 1111 || An == 1022){
+        		txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med?");
+        		txt.setText1("Lad os komme i gang!");
+        		txt.setText2("");
+        		txt.setText3("Fortæl mig det en gang til.")
+        	}
+
+        	if (An == 1210 || An == 1121 || An == 1112 || An == 1023){
+        		conversationEnd = true;
+        	}
 
         }
 
@@ -148,6 +203,7 @@ public class TextManager : MonoBehaviour {
         //Scene 10: Politistation programering
         else if (SceneManager.GetActiveScene().buildIndex == 10)
         {
+
 
         }
 
