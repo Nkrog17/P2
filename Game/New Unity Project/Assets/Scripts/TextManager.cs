@@ -136,7 +136,47 @@ public class TextManager : MonoBehaviour {
         //Scene 6: Laboratorie
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
+            if (An == 1)
+            {
+                conversationEnd = false;
+                txt.turnOnObject();
 
+                txt.setQuestion("“Hej, hvad kan jeg hjælpe dig med?”");
+                txt.setText1("");
+                txt.setText2("“Hej Victoria, jeg har fundet noget bevismateriale, som skal analyseres.”");
+                txt.setText3("");
+            }
+
+            if (An == 11)
+            {
+                txt.setQuestion("“Vi kan undersøge DNA fra disse hår. Alle mennesker har unik DNA, så vi kan måske finde frem til gerningsmanden. Vi har travlt, så jeg har brug for din hjælp til at analysere det.”");
+                txt.setText1("“Hvordan fungere DNA?”");
+                txt.setText2("");
+                txt.setText3("“Hvad skal jeg gøre?”");
+            }
+             
+            if (An == 12)
+            {
+                txt.setQuestion("“DNA består af fire aminosyrer, som vi kalder A, T, C og G. A og T hænger sammen, mens G og C hænger sammen. Ligesom et puslespil.”");
+                txt.setText1("");
+                txt.setText2("“Okay.”");
+                txt.setText3("");
+            }
+
+            if (An == 22 || An == 111)
+            {
+                txt.setQuestion("“Din opgave er, at sammensætte de forskellige aminosyrer, A, T, C og G. Så analyserer jeg det sidste. Tryk på mikroskopet når du er klar.”");
+                txt.setText1("");   
+                txt.setText2("“Okay.”");
+                txt.setText3("");
+                conversationEnd = true;
+
+            }
+
+            if (An >= 22 && An !=111)
+            {
+                txt.turnOffObject();
+            }
         }
 
         //Scene 9: Ulriks hjem
@@ -166,11 +206,16 @@ public class TextManager : MonoBehaviour {
         //Button behavior
         if (txtBehavior.button1)
         {
-            Debug.Log("Button1Clicked 1");
-            txtBehavior.button1 = false;
-            An++;
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-                AnScene2++;
+            if (txt.text1empty())
+            {
+                Debug.Log("Button1Clicked 1");
+                txtBehavior.button1 = false;
+                An++;
+                if (SceneManager.GetActiveScene().buildIndex == 2)
+                    AnScene2++;
+            }
+
+            print(An);
         }
         else if (txtBehavior.button2)
         {
@@ -182,12 +227,16 @@ public class TextManager : MonoBehaviour {
         }
         else if (txtBehavior.button3)
         {
-            Debug.Log("Button1Clicked 3");
-            txt.setText3("nej!");
-            txtBehavior.button3 = false;
-            An = An + 100;
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-                AnScene2 = AnScene2 + 100;
+            if (txt.text3empty())
+            {
+                Debug.Log("Button1Clicked 3");
+                txt.setText3("nej!");
+                txtBehavior.button3 = false;
+                An = An + 100;
+                if (SceneManager.GetActiveScene().buildIndex == 2)
+                    AnScene2 = AnScene2 + 100;
+            }
+            print(An);
         }
     }
 
