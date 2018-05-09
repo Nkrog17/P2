@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/_Scenes/DaughtersRoomLight.unity
-=======
-- path: Assets/_Scenes/Laboratorie.unity
->>>>>>> d36a2ab80550b7e4137ba7b8e8be77e1a9524c4c
+- path: Assets/_Scenes/StartScreen.unity
   isLoaded: 1
   isActive: 1
