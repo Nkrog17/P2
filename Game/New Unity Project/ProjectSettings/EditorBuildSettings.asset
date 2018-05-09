@@ -47,3 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/puzzlesMath.unity
     guid: 4d4be1add4c406c44a24d49b5b765598
+  - enabled: 1
+    path: Assets/_Scenes/Lade.unity
+    guid: 85bb278db5d8eea479e413a644cdd259
