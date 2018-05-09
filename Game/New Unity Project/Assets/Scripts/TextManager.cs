@@ -7,10 +7,7 @@ public class TextManager : MonoBehaviour {
 
     public TextsMethods txt;
     public GameObject vis;
-    static public int An = 1;
-    static public int AnScene2 = 1;
-
-    static public bool conversationEnd;
+    public int An = 1;
 
     public object Texts { get; internal set; }
 
@@ -24,11 +21,9 @@ public class TextManager : MonoBehaviour {
         //Scene 1: PoliceStation
         if (SceneManager.GetActiveScene().buildIndex == 1) {
             txt.setQuestion("“MIN DATTER! Hun… hun.. Hun er væk!”");
-            
 
             if (An == 1)
             {
-                conversationEnd = false;
                 txt.setText1("“Væk?“");
                 txt.setText2("“Rolig nu - er du helt sikker på det?”");
                 txt.setText3("“Sæt lige tempoet ned - dit navn?”");
@@ -59,56 +54,47 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("");
                 txt.setText2("");
                 txt.setText3("");
-                conversationEnd = true;
             }
 
 
-            
+            if (txtBehavior.button1)
+            {
+                Debug.Log("Button1Clicked 1");
+                txtBehavior.button1 = false;
+                An++;
+            }
+            else if (txtBehavior.button2)
+            {
+                Debug.Log("Button1Clicked 2");
+                txtBehavior.button2 = false;
+                An = An+10;
+            }
+            else if (txtBehavior.button3) {
+                Debug.Log("Button1Clicked 3");
+                txt.setText3("nej!");
+                txtBehavior.button3 = false;
+                An = An+100;
+            }
         }
         //Scene 2: GrenevsIntrance
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            txt.turnOnObject();
+            txt.setText1("Answer1");
+            txt.setText2("Answer2");
+            txt.setText3("Answer3");
 
-            if (AnScene2 == 1)
-            {
-                conversationEnd = false;
-                txt.turnOnObject();
-                txt.setText1("“Godaften - du må være Hr. Møller.”");
-                txt.setText2("");
-                txt.setText3("“Godt, vil du være så venlig at vise mig rummet, hvor hun sidst befandt sig?”");
-                txt.setQuestion("");
-            }
-
-            if (AnScene2 == 2)
-            {
-                txt.setText1("“Det er mit arbejde.”");
-                txt.setText2("");
-                txt.setText3("“Selvfølgelig. Vil gøre mit bedste for at finde ud af, hvad der sket.”");
-                txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
-            }
-
-            if (AnScene2 > 2)
-            {
-                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset.”");
-                txt.setText1("");
-                txt.setText2("");
-                txt.setText3("");
-                conversationEnd = true;
-            }
+            txt.setQuestion("Question");
         }
-        //Scene 3: væresle uden lys
+        //Scene 3
         else if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-            txt.turnOnObject();
-            txt.setText1("");
-            txt.setText2("");
-            txt.setText3("");
+            txt.setText1("Answer1");
+            txt.setText2("Answer2");
+            txt.setText3("Answer3");
 
-            txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.s");
-            conversationEnd = true;
+            txt.setQuestion("Question");
         }
-        //Scene 4: Værelse med lys
+        //Scene 4
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             txt.setText1("Answer1");
@@ -117,78 +103,5 @@ public class TextManager : MonoBehaviour {
 
             txt.setQuestion("Question");
         }
-
-        //Scene 5: Kælder
-        else if (SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            txt.turnOnObject();
-            txt.setText1("");
-            txt.setText2("");
-            txt.setText3("");
-            conversationEnd = true;
-
-            if (opAdTrappenBehaviour.light)
-                txt.setQuestion("Jeg har slået strømmen til på værelset igen. Nu burde lyset virke.");
-            else
-                txt.setQuestion("Det ser ud til, at lyset til værelset ovenpå, er blevet afbrudt herfra.");
-        }
-
-        //Scene 6: Laboratorie
-        else if (SceneManager.GetActiveScene().buildIndex == 6)
-        {
-
-        }
-
-        //Scene 9: Ulriks hjem
-        else if (SceneManager.GetActiveScene().buildIndex == 9)
-        {
-
-        }
-
-        //Scene 10: Politistation programering
-        else if (SceneManager.GetActiveScene().buildIndex == 10)
-        {
-
-        }
-
-        //Scene 12: tank
-        else if (SceneManager.GetActiveScene().buildIndex == 12)
-        {
-            
-        }
-
-        //Scene 14: Lade
-        else if (SceneManager.GetActiveScene().buildIndex == 14)
-        {
-
-        }
-
-        //Button behavior
-        if (txtBehavior.button1)
-        {
-            Debug.Log("Button1Clicked 1");
-            txtBehavior.button1 = false;
-            An++;
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-                AnScene2++;
-        }
-        else if (txtBehavior.button2)
-        {
-            Debug.Log("Button1Clicked 2");
-            txtBehavior.button2 = false;
-            An = An + 10;
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-                AnScene2 = AnScene2 + 10;
-        }
-        else if (txtBehavior.button3)
-        {
-            Debug.Log("Button1Clicked 3");
-            txt.setText3("nej!");
-            txtBehavior.button3 = false;
-            An = An + 100;
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-                AnScene2 = AnScene2 + 100;
-        }
     }
-
 }
