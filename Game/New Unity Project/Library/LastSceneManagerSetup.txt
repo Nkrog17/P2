@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/_Scenes/DaughtersRoomNoLight.unity
-=======
-- path: Assets/_Scenes/Greven'sEntrance.unity
->>>>>>> 5ac58879c2f37096822dae39f2053e78ade7ea89
+- path: Assets/_Scenes/puzzlesMath.unity
   isLoaded: 1
   isActive: 1
