@@ -459,7 +459,7 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "En mand i bar overkrop. Der st\xE5r Zach Efron i hj\xF8rnet."
+      value: "En mand i bar overkrop. Der st\xE5r Zac Efron i hj\xF8rnet."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
@@ -957,7 +957,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneNum: 6
   activeScene: 4
-  swithcScene: 0
 --- !u!70 &1150596894
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
