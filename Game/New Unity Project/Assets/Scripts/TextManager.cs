@@ -111,6 +111,7 @@ public class TextManager : MonoBehaviour {
         //Scene 4: Værelse med lys
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
+            conversationEnd = true;
             txt.setText1("Answer1");
             txt.setText2("Answer2");
             txt.setText3("Answer3");
@@ -184,10 +185,28 @@ public class TextManager : MonoBehaviour {
         {
             if (An == 1)
             {
-                txt.setText1("");
+                txt.turnOnObject();
+                txt.setQuestion("“Jeg vågnede op i nat ved, at Ulrik larmede i gangen. Jeg spurgte ham, hvor han skulle hen, men kan svarede mig ikke”");
+                txt.setText1("“Hvornår skete det?”");
                 txt.setText2("");
-                txt.setText3("");
+                txt.setText3("“Har du nogen ide om, hvor han skulle hen?”");
 
+            }
+
+            if (An == 2 || An == 111)
+            {
+                txt.setQuestion("“Det skete cirka en time siden. Omkring klokken to. Han tog sin bil og kørte væk!”");
+                txt.setText1("");
+                txt.setText2("“Hmm… Der er ikke mere at gøre her. Jeg må prøve at finde hans bil.”");
+                txt.setText3("");
+            }
+
+            if (An == 101)
+            {
+                txt.setQuestion("“Nej, han har aldrig gjort det før. Jeg har simpelthen ingen ide om, hvor han skulle tage hen på dette tidspunkt. Åh, jeg håber ikke han har rodet sig ud i noget!”");
+                txt.setText1("");
+                txt.setText2("“Hvornår skete det?”");
+                txt.setText3("");
             }
         }
 
