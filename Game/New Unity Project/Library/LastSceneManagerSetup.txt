@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/puzzlesMath.unity
+- path: Assets/_Scenes/PoliciStation.unity
   isLoaded: 1
   isActive: 1
