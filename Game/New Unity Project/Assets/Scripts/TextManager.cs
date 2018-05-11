@@ -205,7 +205,7 @@ public class TextManager : MonoBehaviour {
             }
 
             if (An == 3 || An == 102 || An == 201 || An == 1000 || An == 1211 || An == 1122){
-                An = 1000
+                An = 1000;
                 txt.setQuestion("Du kan finde hans nummerplade i vores database med registrerede personbiler. Imens får jeg adgang til overvågningskameraer i området.");
                 txt.setText1("Hvad er en database?");
                 txt.setText2("");
@@ -233,11 +233,11 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("Nej tak.");
             }
 
-            if (An == 1111 || An == 1022){
+            if (An == 1111 || An == 1022) {
                 txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med?");
                 txt.setText1("Lad os komme i gang!");
                 txt.setText2("");
-                txt.setText3("Fortæl mig det en gang til.")
+                txt.setText3("Fortæl mig det en gang til.");
             }
 
             if (An == 1210 || An == 1121 || An == 1112 || An == 1023){
