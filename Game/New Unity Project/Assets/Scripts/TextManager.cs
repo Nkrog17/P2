@@ -182,7 +182,13 @@ public class TextManager : MonoBehaviour {
         //Scene 9: Ulriks hjem
         else if (SceneManager.GetActiveScene().buildIndex == 9)
         {
+            if (An == 1)
+            {
+                txt.setText1("");
+                txt.setText2("");
+                txt.setText3("");
 
+            }
         }
 
         //Scene 10: Politistation programering
