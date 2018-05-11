@@ -111,6 +111,7 @@ public class TextManager : MonoBehaviour {
         //Scene 4: Værelse med lys
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
+            conversationEnd = true;
             txt.setText1("Answer1");
             txt.setText2("Answer2");
             txt.setText3("Answer3");

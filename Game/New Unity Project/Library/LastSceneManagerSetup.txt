@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/_Scenes/K\xE6lder.unity"
+- path: Assets/_Scenes/DaughtersRoomLight.unity
   isLoaded: 1
   isActive: 1
