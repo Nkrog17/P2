@@ -88,13 +88,18 @@ public class TextManager : MonoBehaviour {
                 txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
             }
 
-            if (AnScene2 > 2)
+            if (AnScene2 == 3 || AnScene2 == 102)
             {
                 txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset.”");
                 txt.setText1("");
-                txt.setText2("");
+                txt.setText2("“Okay, jeg ser mig omkring!”");
                 txt.setText3("");
+            }
+
+            if (AnScene2 == 13  || AnScene2 == 112)
+            {
                 conversationEnd = true;
+                txt.turnOffObject();
             }
         }
         //Scene 3: væresle uden lys
@@ -314,13 +319,131 @@ public class TextManager : MonoBehaviour {
         //Scene 12: tank
         else if (SceneManager.GetActiveScene().buildIndex == 12)
         {
-            
+            if (An == 1)
+            {
+                txt.turnOnObject();
+                conversationEnd = false;
+                txt.setQuestion("“Hvem er du? Hvad vil du?”");
+                txt.setText1("“Jeg kommer fra Politiets Efterretningstjeneste.”");
+                txt.setText2("");
+                txt.setText3("“Jeg er kommet for at stille dig nogle spørgsmål hvad angår en kidnapning!”");
+            }
+
+            if (An == 2 || An == 101)
+            {
+                txt.setQuestion("“Åh nej! Jeg har ikke gjort noget! Jeg sværger! Jeg sagde nej til at hjælpe ham!”");
+                txt.setText1("“Hjælpe hvem?”");
+                txt.setText2("");
+                txt.setText3("“Hvad taler du om?”");
+            }
+
+            if (An == 3 || An == 201 || An == 102)
+            {
+                txt.setQuestion("“Min bror! Han har bortført en pige! Jeg er uskyldig!”");
+                txt.setText1("“Rolig nu, jeg tror på dig. Fortæl mig hele historien.”");
+                txt.setText2("“Slap af! Fortæl mig sandheden!”");
+                txt.setText3("“Hvorfor har du ikke kontaktet politiet?”");
+            }
+
+            if (An == 103|| An == 301 || An == 201)
+            {
+                txt.setQuestion("“Han er min bror! Jeg kunne ikke få mig selv til det. Jeg var siddet her ved tankstationen og overvejet, hvad jeg skulle gøre siden han kørte væk.”");
+                txt.setText1("");
+                txt.setText2("“Fortæl mig hele historien!”");
+                txt.setText3("");
+            }
+
+            if (An == 4 || An == 202 || An == 103 || An == 13 || An == 211 || An == 112 || An == 113 || An == 313 || An == 211)
+            {
+                An = 1000;
+            }
+
+            if (An == 1000)
+            {
+                txt.setQuestion("“Min bror, Frederik, ringede til mig her i nat og bad om min hjælp. Han sagde ikke hvorfor, men da jeg mødte ham her, ville han have hjælp til en bortførelse! Jeg nægtede straks! Derefter kørte han bort. Jeg har været her siden!”");
+                txt.setText1("");
+                txt.setText2("“Hvor er han kørt hen?”");
+                txt.setText3("");
+            }
+
+            if (An == 1010)
+            {
+                txt.setQuestion("“Jeg ved ikke, hvor han tog hen. Han snakkede om en gård, han havde fundet, ikke langt herfra. Jeg ved ikke hvor den er.”");
+                txt.setText1("“Hvornår kørte han?”");
+                txt.setText2("");
+                txt.setText3("“Hvor hurtigt kørte han?”");
+            }
+
+            if (An == 1011 || An == 1110)
+            {
+                txt.setQuestion("“Han kørte for X minutter siden og havde ikke travlt. Han kørte ved 60 kilometer i timen, som man må heromkring.”");
+                txt.setText1("");
+                txt.setText2("“Du kommer med mig! Jeg må finde ud af, hvor han kan være kørt hen”");
+                txt.setText3("");
+            }
+
+            if (An == 1021 ||An == 1120)
+            {
+                txt.turnOffObject();
+                conversationEnd = true;
+            }
         }
 
         //Scene 14: Lade
         else if (SceneManager.GetActiveScene().buildIndex == 14)
         {
+            if (An == 1)
+            {
+                txt.turnOnObject();
+                conversationEnd = false;
+                txt.setQuestion("“Hvad sker der?! Hvem er du!?”");
+                txt.setText1("“Jeg er fra Politiets Efterretningstjeneste!”");
+                txt.setText2("");
+                txt.setText3("“Frederik Olsen! Du er anholdt for kidnapningen af Karmen Møller!”");
+            }
 
+            if (An == 2 || An == 101)
+            {
+                txt.setQuestion("“Hvordan fandt du frem til mig!?”");
+                txt.setText1("“Det tager jeg som en tilståelse.”");
+                txt.setText2("");
+                txt.setText3("“Det vedkommer ikke dig.”");
+            }
+
+            if (An == 3||An == 102|| An == 201)
+            {
+                txt.setQuestion("“Jeg er uskyldig! Jeg har ikke gjort noget ulovligt!”");
+                txt.setText1("“Den tager vi på politistationen.”");
+                txt.setText2("");
+                txt.setText3("“Hvad laver Karmen så her?”");
+            }
+
+            if (An == 4 || An == 103 || An == 202 || An == 301)
+            {
+                An = 1000;
+            }
+
+            if (An == 1000)
+            {
+                txt.setQuestion("“Suk… Okay, anhold mig bare. Det her er håbløst!”");
+                txt.setText1("“Hvorfor bortførte du hende?”");
+                txt.setText2("");
+                txt.setText3("“Frederik Olsen, klokken er 04:21 og du er anholdt.”");
+            }
+
+            if (An == 1001)
+            {
+                txt.setQuestion("“Jeg har mistet mit job, min bil og snart mister jeg mit hus. Jeg har ikke penge nok til at forsørge min familie. Jeg havde brug for løsepenge. Derfor bortførte jeg en rigmands datter.”");
+                txt.setText1("");
+                txt.setText2("“Frederik Olsen, klokken er 04:23 og du er anholdt!”");
+                txt.setText3("");
+            }
+
+            if (An == 1100 || An == 1002)
+            {
+                conversationEnd = true;
+                txt.turnOffObject();
+            }
         }
 
         //Button behavior
