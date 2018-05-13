@@ -446,6 +446,43 @@ public class TextManager : MonoBehaviour {
             }
         }
 
+        // Scene slut
+        if (SceneManager.GetActiveScene().buildIndex == 15)
+        {
+            if (An == 1)//Møller
+            {
+                conversationEnd = false;
+                txt.turnOnObject();
+                txt.setQuestion("“Tusind tak skal du have! Jeg var så bekymret!”");
+                txt.setText1("“Jeg gjorde blot min pligt!”");
+                txt.setText2("");
+                txt.setText3("“Jeg er glad for, at kunne hjælpe!”");
+            }
+
+            if (An == 2 || An == 101)//Karmen
+            {
+                txt.setQuestion("“Mange tusind tak! Jeg var så bange for, hvad der ville ske med mig! Hvad skete der med forbryderen?”");
+                txt.setText1("“Ham tager domstolen sig af!”");
+                txt.setText2("");
+                txt.setText3("“Han ender bag lås og slå.”");
+            }
+
+            if (An == 3 || An == 102 || An == 201)
+            {
+                txt.setQuestion("“Igen, tusind tak! Nu kan vi endelig slappe af. Du gjorde et godt stykke arbejde. Du overgik mine forventninger!”");
+                txt.setText1("“Jeg må gå nu.“");
+                txt.setText2("");
+                txt.setText3("“Pas på jer selv”");
+            }
+
+            if (An == 4 || An == 103 || An == 202 || An == 301)
+            {
+                //Spil slut
+                txt.turnOffObject();
+                conversationEnd = true;
+            }
+        }
+
         //Button behavior
         if (txtBehavior.button1)
         {

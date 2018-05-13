@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 311
     height: 741
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 227
     height: 425
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 998
     height: 425
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -327,19 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefab
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\thobi\Desktop\P2\p2\Game\New Unity Project
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc280000
-    m_LastClickedID: 10444
-    m_ExpandedIDs: 00000000b827000000ca9a3bffffff7f
+    m_SelectedIDs: c4280000
+    m_LastClickedID: 10436
+    m_ExpandedIDs: 000000009e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -355,7 +355,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8270000
+    m_ExpandedIDs: 000000009e270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -411,7 +411,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a6070000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 88fbffff00000000
+    m_ExpandedIDs: a6daffff54e6ffff7ce9ffff26eeffff7cfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,7 +506,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-  - Greven'sEntrance
+  - PigenHjemmeIgen
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -538,14 +538,14 @@ MonoBehaviour:
     height: 404
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 34.10097280055096
+  lastFramingTime: 735.9129253447312
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 280.53308, y: 76.57601, z: -5.781536}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 280.53308, y: 76.57601, z: -5.781536}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -573,9 +573,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 612.2134
+    m_Target: 33.805004
     speed: 2
-    m_Value: 612.2134
+    m_Value: 33.805004
   m_Ortho:
     m_Target: 1
     speed: 2
