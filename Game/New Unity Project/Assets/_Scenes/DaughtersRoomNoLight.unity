@@ -113,48 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &104437533
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1131994859}
-    m_Modifications:
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: da3d3c707368acf468c94809cda37048, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &323302968
 Prefab:
   m_ObjectHideFlags: 0
@@ -431,7 +389,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneNum: 2
   activeScene: 3
-  swithcScene: 1
 --- !u!58 &767469559
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -617,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -657,7 +614,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1664135426}
   - {fileID: 323302970}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -748,11 +704,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1664135426 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048,
-    type: 2}
-  m_PrefabInternal: {fileID: 104437533}
 --- !u!1001 &1673797804
 Prefab:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class SQLString : MonoBehaviour {
 	public GameObject errorstring;
 	public GameObject randomentries;
 	public GameObject ulrikentry;
+    public GameObject done;
 	bool errorstringon;
 	int x;
 	public bool puzzledone;
@@ -18,7 +19,9 @@ public class SQLString : MonoBehaviour {
 	void Start () {
 		errorstring.SetActive (false);
 		ulrikentry.SetActive (false);
-	}
+        done.SetActive(false);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -41,8 +44,10 @@ public class SQLString : MonoBehaviour {
 		randomentries.SetActive (false);
 		ulrikentry.SetActive (true);
 		puzzledone = true;
-		
-	}
+        done.SetActive(true);
+
+
+    }
 
 	public void checkSQL () {
 		errorstring.SetActive (false);

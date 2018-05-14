@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4062644477510900}
   - component: {fileID: 212852678747098434}
   - component: {fileID: 114869446307963192}
+  - component: {fileID: 65759390148979384}
   m_Layer: 0
   m_Name: keysikon
   m_TagString: Untagged
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65759390148979384
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1831907266913182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114869446307963192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,8 +65,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneNum: 0
-  activeScene: 0
+  SceneNum: 6
+  activeScene: 4
 --- !u!212 &212852678747098434
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -87,7 +100,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d8b56fc6c82481f47b758902d763ee3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

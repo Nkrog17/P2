@@ -615,6 +615,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114689083712122558, guid: da3d3c707368acf468c94809cda37048,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 114689083712122558, guid: da3d3c707368acf468c94809cda37048,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da3d3c707368acf468c94809cda37048, type: 2}
   m_IsPrefabParent: 0
@@ -771,16 +781,6 @@ Prefab:
     - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
       propertyPath: m_RootOrder
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
-        type: 2}
-      propertyPath: SceneNum
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
-        type: 2}
-      propertyPath: activeScene
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 354454e99e0d777499c0a257043ada77, type: 2}
