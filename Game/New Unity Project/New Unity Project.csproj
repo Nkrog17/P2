@@ -286,7 +286,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ContinueButton.cs" />
     <Compile Include="Assets\HouseAppear.cs" />
+    <Compile Include="Assets\HouseContinue.cs" />
     <Compile Include="Assets\HouseInfo.cs" />
     <Compile Include="Assets\RadiusScale.cs" />
     <Compile Include="Assets\RadiusSliderSpeed.cs" />
@@ -302,6 +304,7 @@
     <Compile Include="Assets\Scripts\TextsMethods.cs" />
     <Compile Include="Assets\Scripts\txtBehavior.cs" />
     <Compile Include="Assets\SliderSpeed.cs" />
+    <Compile Include="Assets\WhenClicked.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
