@@ -1947,7 +1947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c5e080cec15c34185ec33a4ec37202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
+  num: 15
 --- !u!224 &753246172
 RectTransform:
   m_ObjectHideFlags: 0

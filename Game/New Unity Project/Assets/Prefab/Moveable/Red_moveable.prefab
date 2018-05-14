@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1286899529119532}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.5028, y: -4.5441, z: 0}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.039276928}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.039276928}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -68,8 +68,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20.7, y: 20.7, z: 1}
-  m_Center: {x: 0.027897704, y: 1.1172358, z: 0}
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114036031654575360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,12 +129,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90bdab3e535cc4b438c2115b3df57272, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55ec8ec5e5e556f40b79625b513da113, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.84, y: 24.470001}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

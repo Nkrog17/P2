@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Lade.unity
+- path: Assets/_Scenes/PigenHjemmeIgen.unity
   isLoaded: 1
   isActive: 1

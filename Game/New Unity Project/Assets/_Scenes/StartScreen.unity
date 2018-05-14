@@ -190,8 +190,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 46849004}
-        m_MethodName: buttonClicked
+      - m_Target: {fileID: 787729081}
+        m_MethodName: OnMouseDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -427,9 +427,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 787729080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 975dfdd784cae194c810863d578c17b4, type: 3}
+  m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneNum: 1
+  activeScene: 0
 --- !u!4 &787729082
 Transform:
   m_ObjectHideFlags: 0
