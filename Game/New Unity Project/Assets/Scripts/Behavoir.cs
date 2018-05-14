@@ -20,7 +20,7 @@ public class Behavoir : MonoBehaviour
 
     void Update()
     {
-        CheckPos(-6f, 6f, 4.5f, -4.5f);
+        CheckPos(-5.5f, 5.5f, 4.5f, -4.5f);
 
     }
 
@@ -43,25 +43,28 @@ public class Behavoir : MonoBehaviour
     // limits on the gameobjects positions in the window
     void CheckPos(float n, float m, float l, float k)
     {
-        if (transform.position.x < -7.5f)
+        if (tag.Equals("Moveable"))
         {
-            Vector3 temp = new Vector3(n, transform.position.y, transform.position.z);
-            transform.position = temp;
-        }
-        if (transform.position.x > 7.5f)
-        {
-            Vector3 temp = new Vector3(m, transform.position.y, transform.position.z);
-            transform.position = temp;
-        }
-        if (transform.position.y > 5.5)
-        {
-            Vector3 temp = new Vector3(transform.position.x, l, transform.position.z);
-            transform.position = temp;
-        }
-        if (transform.position.y < -5.5)
-        {
-            Vector3 temp = new Vector3(transform.position.x, k, transform.position.z);
-            transform.position = temp;
+            if (transform.position.x < -5.5f)
+            {
+                Vector3 temp = new Vector3(n, transform.position.y, transform.position.z);
+                transform.position = temp;
+            }
+            if (transform.position.x > 5.5f)
+            {
+                Vector3 temp = new Vector3(m, transform.position.y, transform.position.z);
+                transform.position = temp;
+            }
+            if (transform.position.y > 4.5)
+            {
+                Vector3 temp = new Vector3(transform.position.x, l, transform.position.z);
+                transform.position = temp;
+            }
+            if (transform.position.y < -4.5)
+            {
+                Vector3 temp = new Vector3(transform.position.x, k, transform.position.z);
+                transform.position = temp;
+            }
         }
     }
 
