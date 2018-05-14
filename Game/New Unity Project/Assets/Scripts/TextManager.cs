@@ -10,12 +10,13 @@ public class TextManager : MonoBehaviour {
     static public int An = 1;
     static public int AnScene2 = 1;
 
-    static public bool conversationEnd;
+    static public bool conversationEnd = true;
 
     public object Texts { get; internal set; }
 
     // Use this for initialization
     void Start () {
+
 	}
 		
 	
@@ -130,6 +131,11 @@ public class TextManager : MonoBehaviour {
 				txt.setText3 ("");
 				conversationEnd = true;
 			}
+            if (An == 21)
+            {
+                txt.turnOffObject();
+                conversationEnd = true;
+            }
         }
 
         //Scene 5: Kælder

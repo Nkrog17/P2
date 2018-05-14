@@ -186,6 +186,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &91269881 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1550200087859850, guid: da3d3c707368acf468c94809cda37048,
+    type: 2}
+  m_PrefabInternal: {fileID: 710836219}
 --- !u!1001 &242327605
 Prefab:
   m_ObjectHideFlags: 0
@@ -509,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -955,6 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0ffe56ebc444c4dba95c8449798474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vis: {fileID: 91269881}
 --- !u!70 &1150596894
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
