@@ -10,12 +10,13 @@ public class TextManager : MonoBehaviour {
     static public int An = 1;
     static public int AnScene2 = 1;
 
-    static public bool conversationEnd;
+    static public bool conversationEnd = true;
 
     public object Texts { get; internal set; }
 
     // Use this for initialization
     void Start () {
+
 	}
 		
 	
@@ -116,6 +117,27 @@ public class TextManager : MonoBehaviour {
         //Scene 4: Værelse med lys
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
+<<<<<<< HEAD
+			if (An == 1) {
+				conversationEnd = false;
+				txt.setQuestion ("“Den kam genkender jeg ikke!”");
+				txt.setText1 ("");
+				txt.setText2 ("“Der er mørke hår på den.”");
+				txt.setText3 ("");
+			}
+			if (An == 11) {
+				txt.setQuestion ("“Karmen har lyst hår! Det er ikke hendes kam!”");
+				txt.setText1 ("");
+				txt.setText2 ("“Jeg tager den med og undersøger den.”");
+				txt.setText3 ("");
+				conversationEnd = true;
+			}
+            if (An == 21)
+            {
+                txt.turnOffObject();
+                conversationEnd = true;
+            }
+=======
             if (An == 1){
                 conversationEnd = false;
                 txt.turnOnObject();
@@ -132,6 +154,7 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = true;
             }
             
+>>>>>>> c46b2bf9cf4bc0abdaca9f96e2f50ce38c6eb5ff
         }
 
         //Scene 5: Kælder

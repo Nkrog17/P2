@@ -296,6 +296,7 @@
     <Compile Include="Assets\Scripts\Behavoir.cs" />
     <Compile Include="Assets\Scripts\ButtonWithSceneIndexAsAug.cs" />
     <Compile Include="Assets\Scripts\Description.cs" />
+    <Compile Include="Assets\Scripts\kam.cs" />
     <Compile Include="Assets\Scripts\opAdTrappenBehaviour.cs" />
     <Compile Include="Assets\Scripts\PhoneBehaviour.cs" />
     <Compile Include="Assets\Scripts\Power.cs" />

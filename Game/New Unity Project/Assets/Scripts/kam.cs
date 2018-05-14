@@ -6,6 +6,8 @@ public class kam : MonoBehaviour {
 
 	static public bool kamClicked;
 
+    public GameObject vis;
+
 	// Use this for initialization
 	void Start () {
 		kamClicked = false;
@@ -19,5 +21,7 @@ public class kam : MonoBehaviour {
 	void OnMouseDown(){
 		kamClicked = true;
 		gameObject.SetActive (false);
+        print(kamClicked);
+        vis.SetActive(true);
 	}
 }
