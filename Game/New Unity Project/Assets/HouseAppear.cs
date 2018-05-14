@@ -16,16 +16,16 @@ public class HouseAppear : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        print(radius.value);
+        //print(radius.value);
         if (radius.value >= distance)
         {
             house.SetActive(true);
-            Debug.Log("true");
+            //Debug.Log("true");
         }
         else
         {
             house.SetActive(false);
-            Debug.Log("false");
+            //Debug.Log("false");
         }
 
 	}
