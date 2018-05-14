@@ -23,7 +23,7 @@ public class TextManager : MonoBehaviour {
 	void Update () {
         //Scene 1: PoliceStation
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            txt.setQuestion("“MIN DATTER! Hun… hun.. Hun er væk!”");
+            txt.setQuestion("“MIN DATTER! Karmen, hun… hun er væk!”");
             
 
             if (An == 1)
@@ -37,7 +37,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 2 || An == 11)
             {
-                txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Hun kunne aldrig finde på at stikke af midt om natten”");
+                txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Karmen kunne aldrig finde på at stikke af midt om natten”");
                 txt.setText1("");
                 txt.setText2("“Du mener altså, at nogen skulle have brudt ind gennem vinduet og kidnappet hende? Giv mig din adresse, så kommer jeg med det samme.“");
                 txt.setText3("");
@@ -47,7 +47,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 101)
             {
-                txt.setQuestion("“Jamen… Du er nødt til at hjælpe!Mit navn er Christian Møller.Jeg er bange for der er sket hende noget”");
+                txt.setQuestion("“Jamen… Du er nødt til at hjælpe! Mit navn er Christian Møller. Jeg er bange for der er sket hende noget!”");
                 txt.setText1("“Okay Hr. Møller. Jeg gør hvad jeg kan, for at komme så hurtigt som muligt - din adresse?”");
                 txt.setText2("");
                 txt.setText3("“Hvis du giver mig din adresse, så kommer jeg med det samme.”");
@@ -90,7 +90,7 @@ public class TextManager : MonoBehaviour {
 
             if (AnScene2 == 3 || AnScene2 == 102)
             {
-                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset.”");
+                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset, hvis nødvendigt.”");
                 txt.setText1("");
                 txt.setText2("“Okay, jeg ser mig omkring!”");
                 txt.setText3("");
@@ -110,7 +110,7 @@ public class TextManager : MonoBehaviour {
             txt.setText2("");
             txt.setText3("");
 
-            txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.s");
+            txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.");
             conversationEnd = true;
         }
         //Scene 4: Værelse med lys
