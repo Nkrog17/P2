@@ -14,7 +14,7 @@ public class opAdTrappenBehaviour : MonoBehaviour {
     private void OnMouseDown()
     {
         activeScene = SceneManager.GetActiveScene().buildIndex;
-        if (light)
+        if (opAdTrappenBehaviour.light)
             SceneManager.LoadScene(SceneNumLight);
 
         else

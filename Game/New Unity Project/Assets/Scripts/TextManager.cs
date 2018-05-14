@@ -23,7 +23,7 @@ public class TextManager : MonoBehaviour {
 	void Update () {
         //Scene 1: PoliceStation
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            txt.setQuestion("“MIN DATTER! Hun… hun.. Hun er væk!”");
+            txt.setQuestion("“MIN DATTER! Karmen, hun… hun er væk!”");
             
 
             if (An == 1)
@@ -37,7 +37,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 2 || An == 11)
             {
-                txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Hun kunne aldrig finde på at stikke af midt om natten”");
+                txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Karmen kunne aldrig finde på at stikke af midt om natten”");
                 txt.setText1("");
                 txt.setText2("“Du mener altså, at nogen skulle have brudt ind gennem vinduet og kidnappet hende? Giv mig din adresse, så kommer jeg med det samme.“");
                 txt.setText3("");
@@ -47,7 +47,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 101)
             {
-                txt.setQuestion("“Jamen… Du er nødt til at hjælpe!Mit navn er Christian Møller.Jeg er bange for der er sket hende noget”");
+                txt.setQuestion("“Jamen… Du er nødt til at hjælpe! Mit navn er Christian Møller. Jeg er bange for der er sket hende noget!”");
                 txt.setText1("“Okay Hr. Møller. Jeg gør hvad jeg kan, for at komme så hurtigt som muligt - din adresse?”");
                 txt.setText2("");
                 txt.setText3("“Hvis du giver mig din adresse, så kommer jeg med det samme.”");
@@ -88,13 +88,18 @@ public class TextManager : MonoBehaviour {
                 txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
             }
 
-            if (AnScene2 > 2)
+            if (AnScene2 == 3 || AnScene2 == 102)
             {
-                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset.”");
+                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset, hvis nødvendigt.”");
                 txt.setText1("");
-                txt.setText2("");
+                txt.setText2("“Okay, jeg ser mig omkring!”");
                 txt.setText3("");
+            }
+
+            if (AnScene2 == 13  || AnScene2 == 112)
+            {
                 conversationEnd = true;
+                txt.turnOffObject();
             }
         }
         //Scene 3: væresle uden lys
@@ -105,12 +110,13 @@ public class TextManager : MonoBehaviour {
             txt.setText2("");
             txt.setText3("");
 
-            txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.s");
+            txt.setQuestion("Lyset virker ikke. Det er alt for mørkt til, at jeg kan se noget. Jeg må få lyset til at virke.");
             conversationEnd = true;
         }
         //Scene 4: Værelse med lys
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
+            conversationEnd = true;
             txt.setText1("Answer1");
             txt.setText2("Answer2");
             txt.setText3("Answer3");
@@ -182,7 +188,31 @@ public class TextManager : MonoBehaviour {
         //Scene 9: Ulriks hjem
         else if (SceneManager.GetActiveScene().buildIndex == 9)
         {
+            if (An == 1)
+            {
+                txt.turnOnObject();
+                txt.setQuestion("“Jeg vågnede op i nat ved, at Ulrik larmede i gangen. Jeg spurgte ham, hvor han skulle hen, men kan svarede mig ikke”");
+                txt.setText1("“Hvornår skete det?”");
+                txt.setText2("");
+                txt.setText3("“Har du nogen ide om, hvor han skulle hen?”");
 
+            }
+
+            if (An == 2 || An == 111)
+            {
+                txt.setQuestion("“Det skete cirka en time siden. Omkring klokken to. Han tog sin bil og kørte væk!”");
+                txt.setText1("");
+                txt.setText2("“Hmm… Der er ikke mere at gøre her. Jeg må prøve at finde hans bil.”");
+                txt.setText3("");
+            }
+
+            if (An == 101)
+            {
+                txt.setQuestion("“Nej, han har aldrig gjort det før. Jeg har simpelthen ingen ide om, hvor han skulle tage hen på dette tidspunkt. Åh, jeg håber ikke han har rodet sig ud i noget!”");
+                txt.setText1("");
+                txt.setText2("“Hvornår skete det?”");
+                txt.setText3("");
+            }
         }
 
         //Scene 10: Politistation programering
@@ -289,13 +319,168 @@ public class TextManager : MonoBehaviour {
         //Scene 12: tank
         else if (SceneManager.GetActiveScene().buildIndex == 12)
         {
-            
+            if (An == 1)
+            {
+                txt.turnOnObject();
+                conversationEnd = false;
+                txt.setQuestion("“Hvem er du? Hvad vil du?”");
+                txt.setText1("“Jeg kommer fra Politiets Efterretningstjeneste.”");
+                txt.setText2("");
+                txt.setText3("“Jeg er kommet for at stille dig nogle spørgsmål hvad angår en kidnapning!”");
+            }
+
+            if (An == 2 || An == 101)
+            {
+                txt.setQuestion("“Åh nej! Jeg har ikke gjort noget! Jeg sværger! Jeg sagde nej til at hjælpe ham!”");
+                txt.setText1("“Hjælpe hvem?”");
+                txt.setText2("");
+                txt.setText3("“Hvad taler du om?”");
+            }
+
+            if (An == 3 || An == 201 || An == 102)
+            {
+                txt.setQuestion("“Min bror! Han har bortført en pige! Jeg er uskyldig!”");
+                txt.setText1("“Rolig nu, jeg tror på dig. Fortæl mig hele historien.”");
+                txt.setText2("“Slap af! Fortæl mig sandheden!”");
+                txt.setText3("“Hvorfor har du ikke kontaktet politiet?”");
+            }
+
+            if (An == 103|| An == 301 || An == 201)
+            {
+                txt.setQuestion("“Han er min bror! Jeg kunne ikke få mig selv til det. Jeg var siddet her ved tankstationen og overvejet, hvad jeg skulle gøre siden han kørte væk.”");
+                txt.setText1("");
+                txt.setText2("“Fortæl mig hele historien!”");
+                txt.setText3("");
+            }
+
+            if (An == 4 || An == 202 || An == 103 || An == 13 || An == 211 || An == 112 || An == 113 || An == 313 || An == 211)
+            {
+                An = 1000;
+            }
+
+            if (An == 1000)
+            {
+                txt.setQuestion("“Min bror, Frederik, ringede til mig her i nat og bad om min hjælp. Han sagde ikke hvorfor, men da jeg mødte ham her, ville han have hjælp til en bortførelse! Jeg nægtede straks! Derefter kørte han bort. Jeg har været her siden!”");
+                txt.setText1("");
+                txt.setText2("“Hvor er han kørt hen?”");
+                txt.setText3("");
+            }
+
+            if (An == 1010)
+            {
+                txt.setQuestion("“Jeg ved ikke, hvor han tog hen. Han snakkede om en gård, han havde fundet, ikke langt herfra. Jeg ved ikke hvor den er.”");
+                txt.setText1("“Hvornår kørte han?”");
+                txt.setText2("");
+                txt.setText3("“Hvor hurtigt kørte han?”");
+            }
+
+            if (An == 1011 || An == 1110)
+            {
+                txt.setQuestion("“Han kørte for X minutter siden og havde ikke travlt. Han kørte ved 60 kilometer i timen, som man må heromkring.”");
+                txt.setText1("");
+                txt.setText2("“Du kommer med mig! Jeg må finde ud af, hvor han kan være kørt hen”");
+                txt.setText3("");
+            }
+
+            if (An == 1021 ||An == 1120)
+            {
+                txt.turnOffObject();
+                conversationEnd = true;
+            }
         }
 
         //Scene 14: Lade
         else if (SceneManager.GetActiveScene().buildIndex == 14)
         {
+            if (An == 1)
+            {
+                txt.turnOnObject();
+                conversationEnd = false;
+                txt.setQuestion("“Hvad sker der?! Hvem er du!?”");
+                txt.setText1("“Jeg er fra Politiets Efterretningstjeneste!”");
+                txt.setText2("");
+                txt.setText3("“Frederik Olsen! Du er anholdt for kidnapningen af Karmen Møller!”");
+            }
 
+            if (An == 2 || An == 101)
+            {
+                txt.setQuestion("“Hvordan fandt du frem til mig!?”");
+                txt.setText1("“Det tager jeg som en tilståelse.”");
+                txt.setText2("");
+                txt.setText3("“Det vedkommer ikke dig.”");
+            }
+
+            if (An == 3||An == 102|| An == 201)
+            {
+                txt.setQuestion("“Jeg er uskyldig! Jeg har ikke gjort noget ulovligt!”");
+                txt.setText1("“Den tager vi på politistationen.”");
+                txt.setText2("");
+                txt.setText3("“Hvad laver Karmen så her?”");
+            }
+
+            if (An == 4 || An == 103 || An == 202 || An == 301)
+            {
+                An = 1000;
+            }
+
+            if (An == 1000)
+            {
+                txt.setQuestion("“Suk… Okay, anhold mig bare. Det her er håbløst!”");
+                txt.setText1("“Hvorfor bortførte du hende?”");
+                txt.setText2("");
+                txt.setText3("“Frederik Olsen, klokken er 04:21 og du er anholdt.”");
+            }
+
+            if (An == 1001)
+            {
+                txt.setQuestion("“Jeg har mistet mit job, min bil og snart mister jeg mit hus. Jeg har ikke penge nok til at forsørge min familie. Jeg havde brug for løsepenge. Derfor bortførte jeg en rigmands datter.”");
+                txt.setText1("");
+                txt.setText2("“Frederik Olsen, klokken er 04:23 og du er anholdt!”");
+                txt.setText3("");
+            }
+
+            if (An == 1100 || An == 1002)
+            {
+                conversationEnd = true;
+                txt.turnOffObject();
+            }
+        }
+
+        // Scene slut
+        if (SceneManager.GetActiveScene().buildIndex == 15)
+        {
+            if (An == 1)//Møller
+            {
+                conversationEnd = false;
+                txt.turnOnObject();
+                txt.setQuestion("“Tusind tak skal du have! Jeg var så bekymret!”");
+                txt.setText1("“Jeg gjorde blot min pligt!”");
+                txt.setText2("");
+                txt.setText3("“Jeg er glad for, at kunne hjælpe!”");
+            }
+
+            if (An == 2 || An == 101)//Karmen
+            {
+                txt.setQuestion("“Mange tusind tak! Jeg var så bange for, hvad der ville ske med mig! Hvad skete der med forbryderen?”");
+                txt.setText1("“Ham tager domstolen sig af!”");
+                txt.setText2("");
+                txt.setText3("“Han ender bag lås og slå.”");
+            }
+
+            if (An == 3 || An == 102 || An == 201)
+            {
+                txt.setQuestion("“Igen, tusind tak! Nu kan vi endelig slappe af. Du gjorde et godt stykke arbejde. Du overgik mine forventninger!”");
+                txt.setText1("“Jeg må gå nu.“");
+                txt.setText2("");
+                txt.setText3("“Pas på jer selv”");
+            }
+
+            if (An == 4 || An == 103 || An == 202 || An == 301)
+            {
+                //Spil slut
+                txt.turnOffObject();
+                conversationEnd = true;
+            }
         }
 
         //Button behavior
