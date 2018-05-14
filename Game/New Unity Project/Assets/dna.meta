@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Game/New Unity Project/Assets/dna.meta
 guid: a7259c26c409bf84b89399e1e0631309
 folderAsset: yes
 timeCreated: 1526290999
+=======
+guid: de498c25f2b309a47b0fc9acff480088
+folderAsset: yes
+timeCreated: 1526290111
+>>>>>>> a9d37a7e1394fd021c5ab126184004d29845e81b:Game/New Unity Project/Assets/dna.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

@@ -114,14 +114,22 @@ public class TextManager : MonoBehaviour {
             conversationEnd = true;
         }
         //Scene 4: Værelse med lys
-        else if (SceneManager.GetActiveScene().buildIndex == 4)
+		else if (SceneManager.GetActiveScene().buildIndex == 4 && kam.kamClicked)
         {
-            conversationEnd = true;
-            txt.setText1("Answer1");
-            txt.setText2("Answer2");
-            txt.setText3("Answer3");
-
-            txt.setQuestion("Question");
+			if (An == 1) {
+				conversationEnd = false;
+				txt.setQuestion ("“Den kam genkender jeg ikke!”");
+				txt.setText1 ("");
+				txt.setText2 ("“Der er mørke hår på den.”");
+				txt.setText3 ("");
+			}
+			if (An == 11) {
+				txt.setQuestion ("“Karmen har lyst hår! Det er ikke hendes kam!”");
+				txt.setText1 ("");
+				txt.setText2 ("“Jeg tager den med og undersøger den.”");
+				txt.setText3 ("");
+				conversationEnd = true;
+			}
         }
 
         //Scene 5: Kælder
@@ -182,6 +190,31 @@ public class TextManager : MonoBehaviour {
             if (An >= 22 && An !=111)
             {
                 txt.turnOffObject();
+            }
+        }
+
+        //scene 8: Efter DNA-spil
+        else if (SceneManager.GetActiveScene().buildIndex == 8){
+            if (An == 1){
+                conversationEnd = false;
+                txt.turnOnObject();
+                txt.setQuestion("“Pefekt! Du er færdig med opgaven. Jeg undersøger resultaterne... Det ser ud til, at kammen tilhører en Ulrik Olsen.”");
+                txt.setText1("“Har vi mere information om ham?”");
+                txt.setText2("");
+                txt.setText3("“Hvorfor kender vi hans DNA?”");
+            }
+            if (An == 101){
+                txt.setQuestion("“Han har tidligere siddet i fængsel for at have røvet en kiosk...”");
+                txt.setText1("");
+                txt.setText2("“Har vi mere information om ham?”");
+                txt.setText3("");
+            }
+            if (An == 2 || An == 111){
+                txt.setQuestion("“Han bor ikke langt herfra. Jeg skriver adressen ned til dig.”");
+                txt.setText1("“Har vi mere information om ham?”");
+                txt.setText2("");
+                txt.setText3("“Jeg tager ud og aflægger ham et besøg med det samme!”");
+                conversationEnd = true;
             }
         }
 
