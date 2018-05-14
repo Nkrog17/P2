@@ -198,7 +198,7 @@ public class TextManager : MonoBehaviour {
         //scene 8: Efter DNA-spil
         else if (SceneManager.GetActiveScene().buildIndex == 8){
             if (An == 1){
-                conversatonEnd = false;
+                conversationEnd = false;
                 txt.turnOnObject();
                 txt.setQuestion("“Pefekt! Du er færdig med opgaven. Jeg undersøger resultaterne... Det ser ud til, at kammen tilhører en Ulrik Olsen.”");
                 txt.setText1("“Har vi mere information om ham?”");
