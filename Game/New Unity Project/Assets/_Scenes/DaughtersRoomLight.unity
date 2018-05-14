@@ -952,11 +952,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150596891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c0ffe56ebc444c4dba95c8449798474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneNum: 6
-  activeScene: 4
 --- !u!70 &1150596894
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
