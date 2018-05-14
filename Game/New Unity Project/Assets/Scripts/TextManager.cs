@@ -185,6 +185,31 @@ public class TextManager : MonoBehaviour {
             }
         }
 
+        //scene 8: Efter DNA-spil
+        else if (SceneManager.GetActiveScene().buildIndex == 8){
+            if (An == 1){
+                conversatonEnd = false;
+                txt.turnOnObject();
+                txt.setQuestion("“Pefekt! Du er færdig med opgaven. Jeg undersøger resultaterne... Det ser ud til, at kammen tilhører en Ulrik Olsen.”");
+                txt.setText1("“Har vi mere information om ham?”");
+                txt.setText2("");
+                txt.setText3("“Hvorfor kender vi hans DNA?”");
+            }
+            if (An == 101){
+                txt.setQuestion("“Han har tidligere siddet i fængsel for at have røvet en kiosk...”");
+                txt.setText1("");
+                txt.setText2("“Har vi mere information om ham?”");
+                txt.setText3("");
+            }
+            if (An == 2 || An == 111){
+                txt.setQuestion("“Han bor ikke langt herfra. Jeg skriver adressen ned til dig.”");
+                txt.setText1("“Har vi mere information om ham?”");
+                txt.setText2("");
+                txt.setText3("“Jeg tager ud og aflægger ham et besøg med det samme!”");
+                conversationEnd = true;
+            }
+        }
+
         //Scene 9: Ulriks hjem
         else if (SceneManager.GetActiveScene().buildIndex == 9)
         {
