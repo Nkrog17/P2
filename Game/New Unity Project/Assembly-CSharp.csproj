@@ -51,16 +51,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ContinueButton.cs" />
+     <Compile Include="Assets\HouseAppear.cs" />
+     <Compile Include="Assets\HouseContinue.cs" />
+     <Compile Include="Assets\HouseInfo.cs" />
+     <Compile Include="Assets\RadiusScale.cs" />
+     <Compile Include="Assets\RadiusSliderSpeed.cs" />
+     <Compile Include="Assets\ResultCalculator.cs" />
+     <Compile Include="Assets\Scripts\Behavoir.cs" />
      <Compile Include="Assets\Scripts\ButtonWithSceneIndexAsAug.cs" />
      <Compile Include="Assets\Scripts\Description.cs" />
+     <Compile Include="Assets\Scripts\kam.cs" />
      <Compile Include="Assets\Scripts\opAdTrappenBehaviour.cs" />
      <Compile Include="Assets\Scripts\PhoneBehaviour.cs" />
      <Compile Include="Assets\Scripts\Power.cs" />
      <Compile Include="Assets\Scripts\selectSQL.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\SQLString.cs" />
      <Compile Include="Assets\Scripts\TextManager.cs" />
      <Compile Include="Assets\Scripts\TextsMethods.cs" />
      <Compile Include="Assets\Scripts\txtBehavior.cs" />
+     <Compile Include="Assets\Scripts\uWonText.cs" />
+     <Compile Include="Assets\SliderSpeed.cs" />
+     <Compile Include="Assets\WhenClicked.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -121,11 +134,14 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/Niels/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
