@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_Scenes/puzzlesMath.unity
+=======
+- path: Assets/_Scenes/DaughtersRoomLight.unity
+>>>>>>> 6ddd4da275e9fcf6c62b3bc3d8b0dd02536ef375
   isLoaded: 1
   isActive: 1
