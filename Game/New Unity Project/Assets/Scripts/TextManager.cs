@@ -115,9 +115,8 @@ public class TextManager : MonoBehaviour {
             conversationEnd = true;
         }
         //Scene 4: Værelse med lys
-        else if (SceneManager.GetActiveScene().buildIndex == 4)
+        else if (SceneManager.GetActiveScene().buildIndex == 4 && kam.kamClicked)
         {
-<<<<<<< HEAD
 			if (An == 1) {
 				conversationEnd = false;
 				txt.setQuestion ("“Den kam genkender jeg ikke!”");
@@ -130,31 +129,13 @@ public class TextManager : MonoBehaviour {
 				txt.setText1 ("");
 				txt.setText2 ("“Jeg tager den med og undersøger den.”");
 				txt.setText3 ("");
-				conversationEnd = true;
 			}
             if (An == 21)
             {
                 txt.turnOffObject();
                 conversationEnd = true;
             }
-=======
-            if (An == 1){
-                conversationEnd = false;
-                txt.turnOnObject();
-                txt.setQuestion("“Den kam kenkender jeg ikke... ”");
-                txt.setText1("");
-                txt.setText2("“Der er mørke hår på den.”");
-                txt.setText3("");
-            }
-            if (An == 11){
-                txt.setQuestion("“Karmen har lyst hår! Det er ikke hendes kam!”");
-                txt.setText1("");
-                txt.setText2("“Jeg tager dem med på laboratoriet og undersøger den.”");
-                txt.setText3("");
-                conversationEnd = true;
-            }
             
->>>>>>> c46b2bf9cf4bc0abdaca9f96e2f50ce38c6eb5ff
         }
 
         //Scene 5: Kælder
