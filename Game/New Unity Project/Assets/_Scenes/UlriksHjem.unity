@@ -267,7 +267,7 @@ Transform:
   m_LocalScale: {x: 0.8983766, y: 0.8983763, z: 0.8983763}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404739218
 GameObject:
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 569569963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1836643953}
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 569569963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 775831743}
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
@@ -516,7 +516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &700764530
 Prefab:
@@ -601,21 +601,6 @@ MonoScript:
   m_Namespace: UnityEngine.UI
   m_AssemblyName: UnityEngine.UI
   m_IsEditorScript: 0
---- !u!115 &775831743
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 4
-  m_Script: 
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_ExecutionOrder: 0
-  m_ClassName: EventSystem
-  m_Namespace: UnityEngine.EventSystems
-  m_AssemblyName: UnityEngine.UI
-  m_IsEditorScript: 0
 --- !u!1 &810321133
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +631,7 @@ RectTransform:
   m_Children:
   - {fileID: 475104990}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -837,7 +822,7 @@ Transform:
   m_LocalScale: {x: 0.9348383, y: 0.9348383, z: 0.9348383}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1150850151
 Prefab:
@@ -906,6 +891,58 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1312662045
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.864913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.8038862
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
+        type: 2}
+      propertyPath: activeScene
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
+        type: 2}
+      propertyPath: SceneNum
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 354454e99e0d777499c0a257043ada77, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1620513541
 Prefab:
@@ -1028,23 +1065,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!115 &1836643953
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 4
-  m_Script: 
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_ExecutionOrder: 0
-  m_ClassName: StandaloneInputModule
-  m_Namespace: UnityEngine.EventSystems
-  m_AssemblyName: UnityEngine.UI
-  m_IsEditorScript: 0
 --- !u!1001 &1905523582
 Prefab:
   m_ObjectHideFlags: 0
