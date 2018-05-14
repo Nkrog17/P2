@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -115,8 +115,9 @@ public class TextManager : MonoBehaviour {
             conversationEnd = true;
         }
         //Scene 4: Værelse med lys
-		else if (SceneManager.GetActiveScene().buildIndex == 4 && kam.kamClicked)
+        else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
+<<<<<<< HEAD
 			if (An == 1) {
 				conversationEnd = false;
 				txt.setQuestion ("“Den kam genkender jeg ikke!”");
@@ -136,6 +137,24 @@ public class TextManager : MonoBehaviour {
                 txt.turnOffObject();
                 conversationEnd = true;
             }
+=======
+            if (An == 1){
+                conversationEnd = false;
+                txt.turnOnObject();
+                txt.setQuestion("“Den kam kenkender jeg ikke... ”");
+                txt.setText1("");
+                txt.setText2("“Der er mørke hår på den.”");
+                txt.setText3("");
+            }
+            if (An == 11){
+                txt.setQuestion("“Karmen har lyst hår! Det er ikke hendes kam!”");
+                txt.setText1("");
+                txt.setText2("“Jeg tager dem med på laboratoriet og undersøger den.”");
+                txt.setText3("");
+                conversationEnd = true;
+            }
+            
+>>>>>>> c46b2bf9cf4bc0abdaca9f96e2f50ce38c6eb5ff
         }
 
         //Scene 5: Kælder
@@ -355,8 +374,38 @@ public class TextManager : MonoBehaviour {
             }
         }
 
-        //Scene 12: tank
-        else if (SceneManager.GetActiveScene().buildIndex == 12)
+        //scene 12: efter sql
+        else if (SceneManager.GetActiveScene().buildIndex == 12){
+            if (An == 1){
+                txt.turnOnObject();
+                conversationEnd = false;
+                txt.setQuestion("“Perfekt! Du har fundet ham! Jeg ser, om jeg kan finde bilen.”");
+                txt.setText1("“Skynd dig!”");
+                txt.setText2("");
+                txt.setText3("“Hvordan gør du?”");
+            }
+            if (An == 2){
+                txt.setQuestion("“Rolig nu. Det kræver tålmodighed. Jeg skal nok finde ham.”");
+                txt.setText1("");
+                txt.setText2("“Okay!”");
+                txt.setText3("");
+            }
+            if (An == 101){
+                txt.setQuestion("“Jeg har adgang til adskillige overvågningskameraer i landet. Jeg ser, om bilen er set på et af dem.”");
+                txt.setText1("“Sejt!”");
+                txt.setText2("");
+                txt.setText3("“Okay!”");
+            }
+            if (An == 102 || An == 201 || An == 12){
+                txt.setQuestion("“Jeg har fundet noget! Hans bil er blevet set på en tankstation ikke langt herfra.”");
+                txt.setText1("");
+                txt.setText2("“Jeg tager traks afsted!”");
+                txt.setText3("");
+                conversationEnd = true;
+            }
+        }
+        //Scene 13: tank
+        else if (SceneManager.GetActiveScene().buildIndex == 13)
         {
             if (An == 1)
             {
@@ -417,7 +466,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setQuestion("“Han kørte for X minutter siden og havde ikke travlt. Han kørte ved 60 kilometer i timen, som man må heromkring.”");
                 txt.setText1("");
-                txt.setText2("“Du kommer med mig! Jeg må finde ud af, hvor han kan være kørt hen”");
+                txt.setText2("“Du kommer med mig! Jeg må regne ud, hvor han kan være kørt hen”");
                 txt.setText3("");
             }
 
@@ -428,8 +477,8 @@ public class TextManager : MonoBehaviour {
             }
         }
 
-        //Scene 14: Lade
-        else if (SceneManager.GetActiveScene().buildIndex == 14)
+        //Scene 15: Lade
+        else if (SceneManager.GetActiveScene().buildIndex == 15)
         {
             if (An == 1)
             {
@@ -485,8 +534,8 @@ public class TextManager : MonoBehaviour {
             }
         }
 
-        // Scene slut
-        if (SceneManager.GetActiveScene().buildIndex == 15)
+        // Scene slut 16
+        if (SceneManager.GetActiveScene().buildIndex == 16)
         {
             if (An == 1)//Møller
             {
