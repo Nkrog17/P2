@@ -196,6 +196,7 @@ public class TextManager : MonoBehaviour {
             if (An >= 22 && An !=111)
             {
                 txt.turnOffObject();
+                An = 1;
             }
         }
 
@@ -220,7 +221,12 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("“Har vi mere information om ham?”");
                 txt.setText2("");
                 txt.setText3("“Jeg tager ud og aflægger ham et besøg med det samme!”");
+            }
+            if (An == 3 || An == 102 || An == 112 || An == 211)
+            {
                 conversationEnd = true;
+                txt.turnOffObject();
+                An = 1;
             }
         }
 
@@ -252,15 +258,23 @@ public class TextManager : MonoBehaviour {
                 txt.setText2("“Hvornår skete det?”");
                 txt.setText3("");
             }
+
+            if (An == 111)
+            {
+                conversationEnd = true;
+                txt.turnOffObject();
+                An = 1;
+            }
         }
 
         //Scene 10: Politistation programering
         else if (SceneManager.GetActiveScene().buildIndex == 10)
         {
-            txt.setQuestion("Hej, jeg hører, at du er på sporet af en bil.");
+            
 
             if (An == 1){
                 conversationEnd = false;
+                txt.setQuestion("Hej, jeg hører, at du er på sporet af en bil.");
                 txt.setText1("Ja, kan du hjælpe mig, Amalie?");
                 txt.setText2("");
                 txt.setText3("Jeg er på bar bund, Amalie!");
@@ -311,48 +325,10 @@ public class TextManager : MonoBehaviour {
 
             if (An == 1210 || An == 1121 || An == 1112 || An == 1023){
                 conversationEnd = true;
-            }
-            if (An == 1)
-            {
-                conversationEnd = false;
-                txt.turnOnObject();
-
-                txt.setQuestion("“Hej, hvad kan jeg hjælpe dig med?”");
-                txt.setText1("");
-                txt.setText2("“Hej Victoria, jeg har fundet noget bevismateriale, som skal analyseres.”");
-                txt.setText3("");
-            }
-
-            if (An == 11)
-            {
-                txt.setQuestion("“Vi kan undersøge DNA fra disse hår. Alle mennesker har unik DNA, så vi kan måske finde frem til gerningsmanden. Vi har travlt, så jeg har brug for din hjælp til at analysere det.”");
-                txt.setText1("“Hvordan fungere DNA?”");
-                txt.setText2("");
-                txt.setText3("“Hvad skal jeg gøre?”");
-            }
-             
-            if (An == 12)
-            {
-                txt.setQuestion("“DNA består af fire aminosyrer, som vi kalder A, T, C og G. A og T hænger sammen, mens G og C hænger sammen. Ligesom et puslespil.”");
-                txt.setText1("");
-                txt.setText2("“Okay.”");
-                txt.setText3("");
-            }
-
-            if (An == 22 || An == 111)
-            {
-                txt.setQuestion("“Din opgave er, at sammensætte de forskellige aminosyrer, A, T, C og G. Så analyserer jeg det sidste. Tryk på mikroskopet når du er klar.”");
-                txt.setText1("");   
-                txt.setText2("“Okay.”");
-                txt.setText3("");
-                conversationEnd = true;
-
-            }
-
-            if (An >= 22 && An !=111)
-            {
                 txt.turnOffObject();
+                An = 1;
             }
+            
         }
 
         //scene 12: efter sql
@@ -383,6 +359,12 @@ public class TextManager : MonoBehaviour {
                 txt.setText2("“Jeg tager traks afsted!”");
                 txt.setText3("");
                 conversationEnd = true;
+            }
+            if (An == 112 ||An == 211 ||An == 22)
+            {
+                conversationEnd = true;
+                txt.turnOffObject();
+                An = 1;
             }
         }
         //Scene 13: tank
@@ -455,6 +437,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.turnOffObject();
                 conversationEnd = true;
+                An = 1;
             }
         }
 
