@@ -7,16 +7,16 @@ public class TextManager : MonoBehaviour {
 
     public TextsMethods txt;
     public GameObject vis;
-	[Space(10)]
-	[Header("Personer")]
-	public GameObject Moller;
-	public GameObject Amalie;
-	public GameObject Ulrik;
-	public GameObject Frederik;
-	public GameObject Victoria;
-	public GameObject Kone;
-	public GameObject Phone;
-	public GameObject Karmen;
+    [Space(10)]
+    [Header("Personer")]
+    public GameObject Moller;
+    public GameObject Amalie;
+    public GameObject Ulrik;
+    public GameObject Frederik;
+    public GameObject Victoria;
+    public GameObject Kone;
+    public GameObject Phone;
+    public GameObject Karmen;
 
     static public int An = 1;
     static public int AnScene2 = 1;
@@ -26,7 +26,7 @@ public class TextManager : MonoBehaviour {
     public object Texts { get; internal set; }
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         Moller.SetActive(false);
         Amalie.SetActive(false);
         Ulrik.SetActive(false);
@@ -36,14 +36,14 @@ public class TextManager : MonoBehaviour {
         Phone.SetActive(false);
         Karmen.SetActive(false);
     }
-		
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    // Update is called once per frame
+    void Update() {
         //Scene 1: PoliceStation
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            
-            
+
+
 
             if (An == 1)
             {
@@ -53,7 +53,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("“Væk?“");
                 txt.setText2("“Rolig nu - er du helt sikker på det?”");
                 txt.setText3("“Sæt lige tempoet ned - dit navn?”");
-                
+
             }
 
             if (An == 2 || An == 11)
@@ -74,14 +74,14 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("“Hvis du giver mig din adresse, så kommer jeg med det samme.”");
             }
 
-            if (An == 102 || An == 21 || An == 12|| An == 201)
+            if (An == 102 || An == 21 || An == 12 || An == 201)
             {
                 txt.setQuestion("“Svanemøllen 3. Tak - tusinde tak!”");
                 txt.setText1("");
                 txt.setText2("“Okay, jeg er på vej!”");
                 txt.setText3("");
             }
-            if (An == 112 ||An == 21 || An== 22 ||An == 211)
+            if (An == 112 || An == 21 || An == 22 || An == 211)
             {
                 conversationEnd = true;
                 Phone.SetActive(false);
@@ -89,12 +89,12 @@ public class TextManager : MonoBehaviour {
             }
 
 
-            
+
         }
         //Scene 2: GrenevsIntrance
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            
+
 
             if (AnScene2 == 1)
             {
@@ -124,7 +124,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("");
             }
 
-            if (AnScene2 == 13  || AnScene2 == 112)
+            if (AnScene2 == 13 || AnScene2 == 112)
             {
                 conversationEnd = true;
                 Moller.SetActive(false);
@@ -145,27 +145,27 @@ public class TextManager : MonoBehaviour {
         //Scene 4: Værelse med lys
         else if (SceneManager.GetActiveScene().buildIndex == 4 && kam.kamClicked)
         {
-			if (An == 1) {
+            if (An == 1) {
                 Moller.SetActive(true);
-				conversationEnd = false;
-				txt.setQuestion ("“Den kam genkender jeg ikke!”");
-				txt.setText1 ("");
-				txt.setText2 ("“Der er mørke hår på den.”");
-				txt.setText3 ("");
-			}
-			if (An == 11) {
-				txt.setQuestion ("“Karmen har lyst hår! Det er ikke hendes kam!”");
-				txt.setText1 ("");
-				txt.setText2 ("“Jeg tager den med og undersøger den.”");
-				txt.setText3 ("");
-			}
+                conversationEnd = false;
+                txt.setQuestion("“Den kam genkender jeg ikke!”");
+                txt.setText1("");
+                txt.setText2("“Der er mørke hår på den.”");
+                txt.setText3("");
+            }
+            if (An == 11) {
+                txt.setQuestion("“Karmen har lyst hår! Det er ikke hendes kam!”");
+                txt.setText1("");
+                txt.setText2("“Jeg tager den med og undersøger den.”");
+                txt.setText3("");
+            }
             if (An == 21)
             {
                 Moller.SetActive(false);
                 txt.turnOffObject();
                 conversationEnd = true;
             }
-            
+
         }
 
         //Scene 5: Kælder
@@ -205,7 +205,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText2("");
                 txt.setText3("“Hvad skal jeg gøre?”");
             }
-             
+
             if (An == 12)
             {
                 txt.setQuestion("“DNA består af fire aminosyrer, som vi kalder A, T, C og G. A og T hænger sammen, mens G og C hænger sammen. Ligesom et puslespil.”");
@@ -217,14 +217,14 @@ public class TextManager : MonoBehaviour {
             if (An == 22 || An == 111)
             {
                 txt.setQuestion("“Din opgave er, at sammensætte de forskellige aminosyrer, A, T, C og G. Så analyserer jeg det sidste. Tryk på mikroskopet når du er klar.”");
-                txt.setText1("");   
+                txt.setText1("");
                 txt.setText2("“Okay.”");
                 txt.setText3("");
                 conversationEnd = true;
 
             }
 
-            if (An >= 22 && An !=111)
+            if (An >= 22 && An != 111)
             {
                 Victoria.SetActive(false);
                 txt.turnOffObject();
@@ -233,8 +233,8 @@ public class TextManager : MonoBehaviour {
         }
 
         //scene 8: Efter DNA-spil
-        else if (SceneManager.GetActiveScene().buildIndex == 8){
-            if (An == 1){
+        else if (SceneManager.GetActiveScene().buildIndex == 8) {
+            if (An == 1) {
                 conversationEnd = false;
                 txt.turnOnObject();
                 Victoria.SetActive(true);
@@ -243,13 +243,13 @@ public class TextManager : MonoBehaviour {
                 txt.setText2("");
                 txt.setText3("“Hvorfor kender vi hans DNA?”");
             }
-            if (An == 101){
+            if (An == 101) {
                 txt.setQuestion("“Han har tidligere siddet i fængsel for at have røvet en kiosk...”");
                 txt.setText1("");
                 txt.setText2("“Har vi mere information om ham?”");
                 txt.setText3("");
             }
-            if (An == 2 || An == 111){
+            if (An == 2 || An == 111) {
                 txt.setQuestion("“Han bor ikke langt herfra. Jeg skriver adressen ned til dig.”");
                 txt.setText1("“Har vi mere information om ham?”");
                 txt.setText2("");
@@ -306,9 +306,9 @@ public class TextManager : MonoBehaviour {
         //Scene 10: Politistation programmering
         else if (SceneManager.GetActiveScene().buildIndex == 10)
         {
-            
 
-            if (An == 1){
+
+            if (An == 1) {
                 conversationEnd = false;
                 txt.turnOnObject();
 
@@ -318,14 +318,14 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("Jeg er på bar bund, Amalie!");
             }
 
-            if (An == 2 || An == 101){
-                txt.setQuestion("Hvis du har den mistænktes navn, kan vi måske finde frem til hans bil."); 
+            if (An == 2 || An == 101) {
+                txt.setQuestion("Hvis du har den mistænktes navn, kan vi måske finde frem til hans bil.");
                 txt.setText1("Hvordan det?");
                 txt.setText2("");
                 txt.setText3("Jeg har kun hans navn.");
             }
 
-            if (An == 3 || An == 102 || An == 201 || An == 1000 || An == 1211 || An == 1122){
+            if (An == 3 || An == 102 || An == 201 || An == 1000 || An == 1211 || An == 1122) {
                 An = 1000;
                 txt.setQuestion("Du kan finde hans nummerplade i vores database med registrerede personbiler. Imens får jeg adgang til overvågningskameraer i området.");
                 txt.setText1("Hvad er en database?");
@@ -333,21 +333,21 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("Hvor starter jeg?");
             }
 
-            if (An == 1001){
+            if (An == 1001) {
                 txt.setQuestion("En database er et system til at opbevare information. Den består af tabeller, som kan sorteres efter, hvad du vil finde.");
                 txt.setText1("");
                 txt.setText2("Hvor starter jeg?");
                 txt.setText3("");
             }
 
-            if (An == 1100 || An == 1011){
+            if (An == 1100 || An == 1011) {
                 txt.setQuestion("Du skal blot skrive en enkelt sætning i SQL, som er et programmeringssprog, som kan sortere tabeller i databaser.");
                 txt.setText1("");
                 txt.setText2("Men jeg kender ikke SQL!");
                 txt.setText3("");
             }
 
-            if (An == 1110 || An == 1021){
+            if (An == 1110 || An == 1021) {
                 txt.setQuestion("Det er ret simpelt. Først vælger du den tabel du vil sortere, derefter, hvad du leder efter. Vil du have et eksempel på, hvordan det kunne se ud?");
                 txt.setText1("Ja tak.");
                 txt.setText2("");
@@ -361,17 +361,17 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("Fortæl mig det en gang til.");
             }
 
-            if (An == 1210 || An == 1121 || An == 1112 || An == 1023){
+            if (An == 1210 || An == 1121 || An == 1112 || An == 1023) {
                 conversationEnd = true;
                 txt.turnOffObject();
                 An = 1;
             }
-            
+
         }
 
         //scene 12: efter sql
-        else if (SceneManager.GetActiveScene().buildIndex == 12){
-            if (An == 1){
+        else if (SceneManager.GetActiveScene().buildIndex == 12) {
+            if (An == 1) {
                 txt.turnOnObject();
                 conversationEnd = false;
                 txt.setQuestion("“Perfekt! Du har fundet ham! Jeg ser, om jeg kan finde bilen.”");
@@ -379,26 +379,26 @@ public class TextManager : MonoBehaviour {
                 txt.setText2("");
                 txt.setText3("“Hvordan gør du?”");
             }
-            if (An == 2){
+            if (An == 2) {
                 txt.setQuestion("“Rolig nu. Det kræver tålmodighed. Jeg skal nok finde ham.”");
                 txt.setText1("");
                 txt.setText2("“Okay!”");
                 txt.setText3("");
             }
-            if (An == 101){
+            if (An == 101) {
                 txt.setQuestion("“Jeg har adgang til adskillige overvågningskameraer i landet. Jeg ser, om bilen er set på et af dem.”");
                 txt.setText1("“Sejt!”");
                 txt.setText2("");
                 txt.setText3("“Okay!”");
             }
-            if (An == 102 || An == 201 || An == 12){
+            if (An == 102 || An == 201 || An == 12) {
                 txt.setQuestion("“Jeg har fundet noget! Hans bil er blevet set på en tankstation ikke langt herfra.”");
                 txt.setText1("");
                 txt.setText2("“Jeg tager traks afsted!”");
                 txt.setText3("");
                 conversationEnd = true;
             }
-            if (An == 112 ||An == 211 ||An == 22)
+            if (An == 112 || An == 211 || An == 22)
             {
                 conversationEnd = true;
                 txt.turnOffObject();
@@ -434,7 +434,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("“Hvorfor har du ikke kontaktet politiet?”");
             }
 
-            if (An == 103|| An == 301 || An == 201)
+            if (An == 103 || An == 301 || An == 201)
             {
                 txt.setQuestion("“Han er min bror! Jeg kunne ikke få mig selv til det. Jeg var siddet her ved tankstationen og overvejet, hvad jeg skulle gøre siden han kørte væk.”");
                 txt.setText1("");
@@ -471,7 +471,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("");
             }
 
-            if (An == 1021 ||An == 1120)
+            if (An == 1021 || An == 1120)
             {
                 txt.turnOffObject();
                 conversationEnd = true;
@@ -488,7 +488,28 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = false;
                 txt.setQuestion("Okay, jeg ved, at han har kørt omkring 60 km/t for 5 minutter siden. Det kan jeg bruge til at finde en afstand herfra og finde mistænkelige gårde i nærheden.");
                 txt.setText1("Men vent, jeg er ikke helt sikker på, hvordan jeg skal gøre det...");
-                txt.setText2("I gang med arbejdet!");
+                txt.setText2("");
+                txt.setText3("I gang med arbejdet!");
+            }
+
+            if (An == 2)
+            {
+                txt.setQuestion("Ved at bruge hastigheden og tiden han har bevæget sig i, kan jeg bruge en hastighedsformel til at finde en radius. Derefter kan jeg se hvilke huse han kan have nået hen til.");
+                txt.setText1("Hvor hurtigt og hvor langt var det nu, han kørte?");
+                txt.setText2("");
+                txt.setText3("Okay. På med handsken!");
+            }
+
+            if (An == 3)
+            {
+                An = 1;
+            }
+
+            if (An == 101 || An == 102)
+            {
+                txt.turnOffObject();
+                conversationEnd = true;
+                An = 1;
             }
         }
 
