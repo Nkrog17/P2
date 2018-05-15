@@ -51,8 +51,8 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = false;
                 txt.setQuestion("“MIN DATTER! Karmen, hun… hun er væk!”");
                 txt.setText1("“Væk?“");
-                txt.setText2("“Rolig nu - er du helt sikker på det?”");
-                txt.setText3("“Sæt lige tempoet ned - dit navn?”");
+                txt.setText2("“Rolig nu. Er du helt sikker på det?”");
+                txt.setText3("“Sæt lige tempoet ned. Dit navn?”");
 
             }
 
@@ -60,7 +60,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Karmen kunne aldrig finde på at stikke af midt om natten”");
                 txt.setText1("");
-                txt.setText2("“Du mener altså, at nogen skulle have brudt ind gennem vinduet og kidnappet hende? Giv mig din adresse, så kommer jeg med det samme.“");
+                txt.setText2("“Giv mig din adresse, så kommer jeg.“");
                 txt.setText3("");
 
 
@@ -105,7 +105,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("“Godaften, du må være Hr. Møller.”");
                 txt.setText2("");
                 txt.setText3("“Godt, hvor befandt hun sig sidst?”");
-                txt.setQuestion("");
+                txt.setQuestion("Hej! Hvor er det godt, du kom!");
             }
 
             if (AnScene2 == 2)
@@ -113,10 +113,10 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("“Det er mit arbejde.”");
                 txt.setText2("");
                 txt.setText3("“Selvfølgelig. Jeg finder ud af, hvad der sket.”");
-                txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
+                txt.setQuestion("“Det er mig, ja. Jeg håber, du kan hjælpe mig!”");
             }
 
-            if (AnScene2 == 3 || AnScene2 == 102)
+			if (AnScene2 == 3 || AnScene2 == 102 || An == 101)
             {
                 txt.setQuestion("“På hendes værelse, ovenpå. Men du er velkommen til at kigge dig omkring i huset, hvis det er nødvendigt.”");
                 txt.setText1("");
@@ -124,7 +124,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("");
             }
 
-            if (AnScene2 == 13 || AnScene2 == 112)
+			if (AnScene2 == 13 || AnScene2 == 112 || An == 111)
             {
                 conversationEnd = true;
                 Moller.SetActive(false);
