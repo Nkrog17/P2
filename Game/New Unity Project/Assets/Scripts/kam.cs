@@ -5,8 +5,11 @@ using UnityEngine;
 public class kam : MonoBehaviour {
 
 	static public bool kamClicked;
-
+	public GameObject kamobject;
     public GameObject vis;
+
+	public GameObject backicon;
+	public GameObject keyicon;
 
 	// Use this for initialization
 	void Start () {
@@ -20,8 +23,9 @@ public class kam : MonoBehaviour {
 
 	void OnMouseDown(){
 		kamClicked = true;
-		gameObject.SetActive (false);
-        print(kamClicked);
+		backicon.SetActive (false);
+		keyicon.SetActive (true);
+		kamobject.SetActive (false);
         vis.SetActive(true);
 	}
 }
