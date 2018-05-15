@@ -21,6 +21,6 @@ public class WhenClicked : MonoBehaviour {
     public void ButtonClick ()
     {
 		TextManager.An = 1;
-        SceneManager.LoadScene(num);        
+		Initiate.Fade ("Lade", Color.black, 2.0f);       
     }
 }

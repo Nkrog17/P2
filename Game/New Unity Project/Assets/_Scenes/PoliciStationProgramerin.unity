@@ -141,8 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneSwitch: 0
-  SceneNum: 11
+  SceneSwitch: 1
+  Fade: 0
+  SceneName: puzzlesSQL
 --- !u!61 &367218901
 BoxCollider2D:
   m_ObjectHideFlags: 0

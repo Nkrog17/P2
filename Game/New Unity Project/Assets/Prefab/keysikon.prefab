@@ -66,7 +66,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSwitch: 1
-  SceneNum: 2
+  Fade: 1
+  SceneName: Greven'sEntrance
 --- !u!212 &212852678747098434
 SpriteRenderer:
   m_ObjectHideFlags: 1

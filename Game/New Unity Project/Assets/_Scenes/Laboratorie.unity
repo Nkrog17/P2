@@ -211,7 +211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSwitch: 0
-  SceneNum: 6
+  Fade: 0
+  SceneName: 
 --- !u!61 &596177734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -278,8 +279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneSwitch: 0
-  SceneNum: 7
+  SceneSwitch: 1
+  Fade: 0
+  SceneName: DNApuzzle
 --- !u!70 &677590947
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
