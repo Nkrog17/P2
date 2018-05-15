@@ -12,7 +12,9 @@ public class ButtonWithSceneIndexAsAug : MonoBehaviour {
     public void OnMouseDown() {
 		if (TextManager.conversationEnd) {
 
-			if (SceneSwitch)
+            FindObjectOfType<click>().playClick();
+
+            if (SceneSwitch)
 				TextManager.An = 1;
 			if (Fade) {
 				Initiate.Fade (SceneName, Color.black, 2.0f);

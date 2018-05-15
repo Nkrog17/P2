@@ -764,7 +764,7 @@ public class TextManager : MonoBehaviour {
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2++;
             FindObjectOfType<click>().playClick();
-            print("hej");
+            
 				
         }
         else if (txtBehavior.button2)
@@ -774,7 +774,7 @@ public class TextManager : MonoBehaviour {
             if (SceneManager.GetActiveScene().buildIndex == 2)
                 AnScene2 = AnScene2 + 10;
             FindObjectOfType<click>().playClick();
-            print("hej");
+           
         }
         else if (txtBehavior.button3)
         {
@@ -786,7 +786,7 @@ public class TextManager : MonoBehaviour {
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2 = AnScene2 + 100;
             FindObjectOfType<click>().playClick();
-            print("hej");
+            
 
         }
     }

@@ -10,7 +10,8 @@ public class PhoneBehaviour : MonoBehaviour {
 
     void OnMouseDown()
     {
-            change.GetComponent<TextsMethods>().turnOnObject();
+        FindObjectOfType<click>().playClick();
+        change.GetComponent<TextsMethods>().turnOnObject();
             //change.SetActive(true);
     }
 }

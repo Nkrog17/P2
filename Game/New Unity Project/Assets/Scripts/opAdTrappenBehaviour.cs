@@ -15,6 +15,7 @@ public class opAdTrappenBehaviour : MonoBehaviour {
     {
         if (TextManager.conversationEnd)
         {
+            FindObjectOfType<click>().playClick();
             activeScene = SceneManager.GetActiveScene().buildIndex;
             if (opAdTrappenBehaviour.light)
                 SceneManager.LoadScene(SceneNumLight);

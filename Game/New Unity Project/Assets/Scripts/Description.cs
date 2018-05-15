@@ -31,7 +31,8 @@ public class Description : MonoBehaviour {
 
 	void OnMouseDown (){
 		if (TextManager.conversationEnd) {
-			timer = 0;
+            FindObjectOfType<click>().playClick();
+            timer = 0;
 			descriptionbox.SetActive (true);
 			textbox.text = beskrivelse;
 			showing = true;
