@@ -156,8 +156,8 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             
-                Instantiate(MoveableObjects1[i], new Vector3(-0.5f, 4.5f - (i), 0f), Quaternion.identity);
-                Instantiate(MoveableObjects2[i], new Vector3(0.5f, 4.5f - (i), 0f), Quaternion.identity);
+                Instantiate(MoveableObjects2[i], new Vector3(-0.5f, 4.5f - (i), 0f), Quaternion.identity);
+                Instantiate(MoveableObjects1[i], new Vector3(0.5f, 4.5f - (i), 0f), Quaternion.identity);
             
 
 
