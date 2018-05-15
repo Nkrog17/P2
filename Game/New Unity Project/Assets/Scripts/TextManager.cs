@@ -21,7 +21,7 @@ public class TextManager : MonoBehaviour {
     public GameObject Ulrik;
     public GameObject Frederik;
     public GameObject Victoria;
-    public Gameobject Kone;
+    public GameObject Kone;
     public GameObject Phone;
     public GameObject Karmen;
 
