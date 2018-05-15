@@ -7,23 +7,23 @@ public class TextManager : MonoBehaviour {
 
     public TextsMethods txt;
     public GameObject vis;
+	[Space(10)]
+	[Header("Personer")]
+	public GameObject Moller;
+	public GameObject Amalie;
+	public GameObject Ulrik;
+	public GameObject Frederik;
+	public GameObject Victoria;
+	public GameObject Kone;
+	public GameObject Phone;
+	public GameObject Karmen;
+
     static public int An = 1;
     static public int AnScene2 = 1;
 
     static public bool conversationEnd = true;
 
     public object Texts { get; internal set; }
-
-    [Space(10)]
-    [Header("Personer")]
-    public GameObject Moller;
-    public GameObject Amalie;
-    public GameObject Ulrik;
-    public GameObject Frederik;
-    public GameObject Victoria;
-    public GameObject Kone;
-    public GameObject Phone;
-    public GameObject Karmen;
 
     // Use this for initialization
     void Start () {
