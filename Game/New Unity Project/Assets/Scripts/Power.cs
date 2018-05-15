@@ -8,6 +8,7 @@ public class Power : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        opAdTrappenBehaviour.light = !opAdTrappenBehaviour.light;
+        if (opAdTrappenBehaviour.light != true)
+        opAdTrappenBehaviour.light = true;
     }
 }
