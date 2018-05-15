@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ButtonWithSceneIndexAsAug : MonoBehaviour {
 
+	public bool SceneSwitch = false;
 
     public int SceneNum;
-    public int activeScene;
 
     public void OnMouseDown() {
 		if (TextManager.conversationEnd) {
-			activeScene = SceneManager.GetActiveScene ().buildIndex;
+
+			if (SceneSwitch)
+				TextManager.An = 1;
+			
 			SceneManager.LoadScene (SceneNum);
+
 		}
     }
 }

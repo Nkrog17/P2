@@ -399,21 +399,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 212852678747098434, guid: 354454e99e0d777499c0a257043ada77,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
-        type: 2}
-      propertyPath: SceneNum
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
-        type: 2}
-      propertyPath: activeScene
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 354454e99e0d777499c0a257043ada77, type: 2}
   m_IsPrefabParent: 0
@@ -691,7 +676,7 @@ Transform:
   m_LocalScale: {x: 2.924999, y: 2.3624992, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1776830560
 GameObject:

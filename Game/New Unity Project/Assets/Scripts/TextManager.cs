@@ -228,7 +228,6 @@ public class TextManager : MonoBehaviour {
             {
                 Victoria.SetActive(false);
                 txt.turnOffObject();
-                An = 1;
             }
         }
 
@@ -260,7 +259,6 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = true;
                 Victoria.SetActive(false);
                 txt.turnOffObject();
-                An = 1;
             }
         }
 
@@ -299,7 +297,6 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = true;
                 Kone.SetActive(false);
                 txt.turnOffObject();
-                An = 1;
             }
         }
 
@@ -364,7 +361,6 @@ public class TextManager : MonoBehaviour {
             if (An == 1210 || An == 1121 || An == 1112 || An == 1023) {
                 conversationEnd = true;
                 txt.turnOffObject();
-                An = 1;
             }
 
         }
@@ -402,7 +398,6 @@ public class TextManager : MonoBehaviour {
             {
                 conversationEnd = true;
                 txt.turnOffObject();
-                An = 1;
             }
         }
         //Scene 13: tank
@@ -475,7 +470,6 @@ public class TextManager : MonoBehaviour {
             {
                 txt.turnOffObject();
                 conversationEnd = true;
-                An = 1;
             }
         }
 
@@ -509,7 +503,6 @@ public class TextManager : MonoBehaviour {
             {
                 txt.turnOffObject();
                 conversationEnd = true;
-                An = 1;
             }
         }
 
@@ -612,18 +605,15 @@ public class TextManager : MonoBehaviour {
         {
             if (txt.text1empty())
             {
-                Debug.Log("Button1Clicked 1");
                 txtBehavior.button1 = false;
                 An++;
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2++;
             }
-
-            print(An);
+				
         }
         else if (txtBehavior.button2)
         {
-            Debug.Log("Button1Clicked 2");
             txtBehavior.button2 = false;
             An = An + 10;
             if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -633,14 +623,12 @@ public class TextManager : MonoBehaviour {
         {
             if (txt.text3empty())
             {
-                Debug.Log("Button1Clicked 3");
                 txt.setText3("nej!");
                 txtBehavior.button3 = false;
                 An = An + 100;
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2 = AnScene2 + 100;
             }
-            print(An);
         }
     }
 
