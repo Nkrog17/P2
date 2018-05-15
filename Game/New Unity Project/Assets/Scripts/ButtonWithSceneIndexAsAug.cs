@@ -6,16 +6,19 @@ using UnityEngine.SceneManagement;
 public class ButtonWithSceneIndexAsAug : MonoBehaviour {
 
 	public bool SceneSwitch = false;
-
-    public int SceneNum;
+	public bool Fade;
+	public string SceneName;
 
     public void OnMouseDown() {
 		if (TextManager.conversationEnd) {
 
 			if (SceneSwitch)
 				TextManager.An = 1;
-			
-			SceneManager.LoadScene (SceneNum);
+			if (Fade) {
+				Initiate.Fade (SceneName, Color.black, 2.0f);
+			} else {
+				SceneManager.LoadScene (SceneName);
+			}
 
 		}
     }
