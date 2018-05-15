@@ -27,14 +27,14 @@ public class TextManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Moller.SetAcive(false);
-        Amalie.SetAcive(false);
-        Ulrik.SetAcive(false);
-        Frederik.SetAcive(false);
-        Victoria.SetAcive(false);
-        Kone.SetAcive(false);
-        Phone.SetAcive(false);
-        Karmen.SetAcive(false);
+        Moller.SetActive(false);
+        Amalie.SetActive(false);
+        Ulrik.SetActive(false);
+        Frederik.SetActive(false);
+        Victoria.SetActive(false);
+        Kone.SetActive(false);
+        Phone.SetActive(false);
+        Karmen.SetActive(false);
     }
 		
 	
@@ -303,7 +303,7 @@ public class TextManager : MonoBehaviour {
             }
         }
 
-        //Scene 10: Politistation programering
+        //Scene 10: Politistation programmering
         else if (SceneManager.GetActiveScene().buildIndex == 10)
         {
             
@@ -476,6 +476,19 @@ public class TextManager : MonoBehaviour {
                 txt.turnOffObject();
                 conversationEnd = true;
                 An = 1;
+            }
+        }
+
+        //Scene 14: MathPuzzle
+        else if (SceneManager.GetActiveScene().buildIndex == 14)
+        {
+            if (An == 1)
+            {
+                txt.turnOnObject();
+                conversationEnd = false;
+                txt.setQuestion("Okay, jeg ved, at han har kørt omkring 60 km/t for 5 minutter siden. Det kan jeg bruge til at finde en afstand herfra og finde mistænkelige gårde i nærheden.");
+                txt.setText1("Men vent, jeg er ikke helt sikker på, hvordan jeg skal gøre det...");
+                txt.setText2("I gang med arbejdet!");
             }
         }
 
