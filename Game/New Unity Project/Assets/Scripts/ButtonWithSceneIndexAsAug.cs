@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonWithSceneIndexAsAug : MonoBehaviour {
 
 	public bool SceneSwitch = false;
-
-    public int SceneNum;
+	public string SceneName;
 
     public void OnMouseDown() {
 		if (TextManager.conversationEnd) {
@@ -15,7 +14,7 @@ public class ButtonWithSceneIndexAsAug : MonoBehaviour {
 			if (SceneSwitch)
 				TextManager.An = 1;
 			
-			SceneManager.LoadScene (SceneNum);
+			Initiate.Fade(SceneName, Color.black, 2.0f); 
 
 		}
     }
