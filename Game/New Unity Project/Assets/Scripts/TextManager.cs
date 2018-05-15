@@ -580,7 +580,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("");
             }
 
-            if (An == 1100 || An == 1002)
+            if (An == 1100 || An == 1011)
             {
                 conversationEnd = true;
                 Frederik.SetActive(false);
