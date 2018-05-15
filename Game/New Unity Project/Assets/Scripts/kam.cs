@@ -26,6 +26,7 @@ public class kam : MonoBehaviour {
 		backicon.SetActive (false);
 		keyicon.SetActive (true);
 		kamobject.SetActive (false);
+        TextManager.An = 1;
         vis.SetActive(true);
 	}
 }
