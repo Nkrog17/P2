@@ -69,9 +69,9 @@ public class TextManager : MonoBehaviour {
             if (An == 101)
             {
                 txt.setQuestion("“Jamen… Du er nødt til at hjælpe! Mit navn er Christian Møller. Jeg er bange for der er sket hende noget!”");
-                txt.setText1("“Okay Hr. Møller. Jeg gør hvad jeg kan, for at komme så hurtigt som muligt - din adresse?”");
+                txt.setText1("“Jeg kommer så hurtigt jeg kan. Hvor bor du?”");
                 txt.setText2("");
-                txt.setText3("“Hvis du giver mig din adresse, så kommer jeg med det samme.”");
+                txt.setText3("“Giv mig din adresse, så kommer jeg straks.”");
             }
 
             if (An == 102 || An == 21 || An == 12 || An == 201)
@@ -102,9 +102,9 @@ public class TextManager : MonoBehaviour {
                 conversationEnd = false;
                 Moller.SetActive(true);
                 txt.turnOnObject();
-                txt.setText1("“Godaften - du må være Hr. Møller.”");
+                txt.setText1("“Godaften, du må være Hr. Møller.”");
                 txt.setText2("");
-                txt.setText3("“Godt, vil du være så venlig at vise mig rummet, hvor hun sidst befandt sig?”");
+                txt.setText3("“Godt, hvor befandt hun sig sidst?”");
                 txt.setQuestion("");
             }
 
@@ -112,13 +112,13 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setText1("“Det er mit arbejde.”");
                 txt.setText2("");
-                txt.setText3("“Selvfølgelig. Vil gøre mit bedste for at finde ud af, hvad der sket.”");
+                txt.setText3("“Selvfølgelig. Jeg finder ud af, hvad der sket.”");
                 txt.setQuestion("“Det er mig, ja. Jeg er glad for, du kunne komme så hurtigt!”");
             }
 
             if (AnScene2 == 3 || AnScene2 == 102)
             {
-                txt.setQuestion("“Hendes værelse er ovenpå, men du er velkommen til at kigge dig omkring i huset, hvis nødvendigt.”");
+                txt.setQuestion("“På hendes værelse, ovenpå. Men du er velkommen til at kigge dig omkring i huset, hvis det er nødvendigt.”");
                 txt.setText1("");
                 txt.setText2("“Okay, jeg ser mig omkring!”");
                 txt.setText3("");
@@ -194,7 +194,7 @@ public class TextManager : MonoBehaviour {
 
                 txt.setQuestion("“Hej, hvad kan jeg hjælpe dig med?”");
                 txt.setText1("");
-                txt.setText2("“Hej Victoria, jeg har fundet noget bevismateriale, som skal analyseres.”");
+                txt.setText2("“Hej Victoria, jeg har fundet hår, som skal analyseres.”");
                 txt.setText3("");
             }
 
@@ -210,7 +210,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setQuestion("“DNA består af fire aminosyrer, som vi kalder A, T, C og G. A og T hænger sammen, mens G og C hænger sammen. Ligesom et puslespil.”");
                 txt.setText1("");
-                txt.setText2("“Okay.”");
+                txt.setText2("“Forstået!”");
                 txt.setText3("");
             }
 
@@ -252,7 +252,7 @@ public class TextManager : MonoBehaviour {
                 txt.setQuestion("“Han bor ikke langt herfra. Jeg skriver adressen ned til dig.”");
                 txt.setText1("“Har vi mere information om ham?”");
                 txt.setText2("");
-                txt.setText3("“Jeg tager ud og aflægger ham et besøg med det samme!”");
+                txt.setText3("“Jeg tager ud og besøger ham straks!”");
             }
             if (An == 3 || An == 102 || An == 112 || An == 211)
             {
@@ -272,7 +272,7 @@ public class TextManager : MonoBehaviour {
                 txt.setQuestion("“Jeg vågnede op i nat ved, at Ulrik larmede i gangen. Jeg spurgte ham, hvor han skulle hen, men kan svarede mig ikke”");
                 txt.setText1("“Hvornår skete det?”");
                 txt.setText2("");
-                txt.setText3("“Har du nogen ide om, hvor han skulle hen?”");
+                txt.setText3("“Ved du, hvor han skulle hen?”");
 
             }
 
@@ -280,7 +280,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setQuestion("“Det skete cirka en time siden. Omkring klokken to. Han tog sin bil og kørte væk!”");
                 txt.setText1("");
-                txt.setText2("“Hmm… Der er ikke mere at gøre her. Jeg må prøve at finde hans bil.”");
+                txt.setText2("“Der er ikke mere her. Jeg må finde hans bil.”");
                 txt.setText3("");
             }
 
@@ -408,9 +408,9 @@ public class TextManager : MonoBehaviour {
                 txt.turnOnObject();
                 conversationEnd = false;
                 txt.setQuestion("“Hvem er du? Hvad vil du?”");
-                txt.setText1("“Jeg kommer fra Politiets Efterretningstjeneste.”");
+                txt.setText1("“Jeg er fra Politiets Efterretningstjeneste.”");
                 txt.setText2("");
-                txt.setText3("“Jeg er kommet for at stille dig nogle spørgsmål hvad angår en kidnapning!”");
+                txt.setText3("“Jeg vil stille dig spørgsmål om en kidnapning!”");
             }
 
             if (An == 2 || An == 101)
@@ -424,7 +424,7 @@ public class TextManager : MonoBehaviour {
             if (An == 3 || An == 201 || An == 102)
             {
                 txt.setQuestion("“Min bror! Han har bortført en pige! Jeg er uskyldig!”");
-                txt.setText1("“Rolig nu, jeg tror på dig. Fortæl mig hele historien.”");
+                txt.setText1("“Rolig nu, jeg tror på dig. Fortæl mig det hele.”");
                 txt.setText2("“Slap af! Fortæl mig sandheden!”");
                 txt.setText3("“Hvorfor har du ikke kontaktet politiet?”");
             }
@@ -462,7 +462,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.setQuestion("“Han kørte for X minutter siden og havde ikke travlt. Han kørte ved 60 kilometer i timen, som man må heromkring.”");
                 txt.setText1("");
-                txt.setText2("“Du kommer med mig! Jeg må regne ud, hvor han kan være kørt hen”");
+                txt.setText2("“Du kommer med mig! Jeg må finde Frederik.”");
                 txt.setText3("");
             }
 
@@ -481,7 +481,7 @@ public class TextManager : MonoBehaviour {
                 txt.turnOnObject();
                 conversationEnd = false;
                 txt.setQuestion("Okay, jeg ved, at han har kørt omkring 60 km/t for 5 minutter siden. Det kan jeg bruge til at finde en afstand herfra og finde mistænkelige gårde i nærheden.");
-                txt.setText1("Men vent, jeg er ikke helt sikker på, hvordan jeg skal gøre det...");
+                txt.setText1("Men, jeg er usikker på, hvordan jeg gør det.");
                 txt.setText2("");
                 txt.setText3("I gang med arbejdet!");
             }
@@ -489,7 +489,7 @@ public class TextManager : MonoBehaviour {
             if (An == 2)
             {
                 txt.setQuestion("Ved at bruge hastigheden og tiden han har bevæget sig i, kan jeg bruge en hastighedsformel til at finde en radius. Derefter kan jeg se hvilke huse han kan have nået hen til.");
-                txt.setText1("Hvor hurtigt og hvor langt var det nu, han kørte?");
+                txt.setText1("Hvor hurtigt og hvor langt var det, han kørte?");
                 txt.setText2("");
                 txt.setText3("Okay. På med handsken!");
             }
@@ -516,7 +516,7 @@ public class TextManager : MonoBehaviour {
                 txt.setQuestion("“Hvad sker der?! Hvem er du!?”");
                 txt.setText1("“Jeg er fra Politiets Efterretningstjeneste!”");
                 txt.setText2("");
-                txt.setText3("“Frederik Olsen! Du er anholdt for kidnapningen af Karmen Møller!”");
+                txt.setText3("“Frederik! Du er anholdt for kidnapningen af Karmen!”");
             }
 
             if (An == 2 || An == 101)
