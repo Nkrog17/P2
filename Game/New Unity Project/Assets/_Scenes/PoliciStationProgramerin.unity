@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneSwitch: 0
   SceneNum: 11
-  activeScene: 10
 --- !u!61 &367218901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4836600732793230, guid: da3d3c707368acf468c94809cda37048, type: 2}
       propertyPath: m_LocalPosition.z
