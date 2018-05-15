@@ -308,6 +308,7 @@ public class TextManager : MonoBehaviour {
             if (An == 1) {
                 conversationEnd = false;
                 txt.turnOnObject();
+                Amalie.SetActive(true);
 
                 txt.setQuestion("Hej, jeg hører, at du er på sporet af en bil.");
                 txt.setText1("Ja, kan du hjælpe mig, Amalie?");
@@ -360,6 +361,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 1210 || An == 1121 || An == 1112 || An == 1023) {
                 conversationEnd = true;
+                Amalie.SetActive(false);
                 txt.turnOffObject();
             }
 
@@ -369,6 +371,7 @@ public class TextManager : MonoBehaviour {
         else if (SceneManager.GetActiveScene().buildIndex == 12) {
             if (An == 1) {
                 txt.turnOnObject();
+                Amalie.SetActive(true);
                 conversationEnd = false;
                 txt.setQuestion("“Perfekt! Du har fundet ham! Jeg ser, om jeg kan finde bilen.”");
                 txt.setText1("“Skynd dig!”");
@@ -397,6 +400,7 @@ public class TextManager : MonoBehaviour {
             if (An == 112 || An == 211 || An == 22)
             {
                 conversationEnd = true;
+                Amalie.SetActive(false);
                 txt.turnOffObject();
             }
         }
@@ -407,6 +411,7 @@ public class TextManager : MonoBehaviour {
             {
                 txt.turnOnObject();
                 conversationEnd = false;
+                Ulrik.SetActive(true);
                 txt.setQuestion("“Hvem er du? Hvad vil du?”");
                 txt.setText1("“Jeg er fra Politiets Efterretningstjeneste.”");
                 txt.setText2("");
@@ -469,6 +474,7 @@ public class TextManager : MonoBehaviour {
             if (An == 1021 || An == 1120)
             {
                 txt.turnOffObject();
+                Ulrik.SetActive(false);
                 conversationEnd = true;
             }
         }
@@ -512,6 +518,7 @@ public class TextManager : MonoBehaviour {
             if (An == 1)
             {
                 txt.turnOnObject();
+                Frederik.SetActive(true);
                 conversationEnd = false;
                 txt.setQuestion("“Hvad sker der?! Hvem er du!?”");
                 txt.setText1("“Jeg er fra Politiets Efterretningstjeneste!”");
@@ -559,6 +566,7 @@ public class TextManager : MonoBehaviour {
             if (An == 1100 || An == 1002)
             {
                 conversationEnd = true;
+                Frederik.SetActive(false);
                 txt.turnOffObject();
             }
         }
@@ -569,6 +577,7 @@ public class TextManager : MonoBehaviour {
             if (An == 1)//Møller
             {
                 conversationEnd = false;
+                Moller.SetActive(true);
                 txt.turnOnObject();
                 txt.setQuestion("“Tusind tak skal du have! Jeg var så bekymret!”");
                 txt.setText1("“Jeg gjorde blot min pligt!”");
@@ -578,6 +587,8 @@ public class TextManager : MonoBehaviour {
 
             if (An == 2 || An == 101)//Karmen
             {
+            	Moller.SetActive(false);
+            	Karmen.SetActive(true);
                 txt.setQuestion("“Mange tusind tak! Jeg var så bange for, hvad der ville ske med mig! Hvad skete der med forbryderen?”");
                 txt.setText1("“Ham tager domstolen sig af!”");
                 txt.setText2("");
@@ -586,6 +597,8 @@ public class TextManager : MonoBehaviour {
 
             if (An == 3 || An == 102 || An == 201)
             {
+            	Karmen.SetActive(false);
+            	Moller.SetActive(true);
                 txt.setQuestion("“Igen, tusind tak! Nu kan vi endelig slappe af. Du gjorde et godt stykke arbejde. Du overgik mine forventninger!”");
                 txt.setText1("“Jeg må gå nu.“");
                 txt.setText2("");
@@ -595,6 +608,7 @@ public class TextManager : MonoBehaviour {
             if (An == 4 || An == 103 || An == 202 || An == 301)
             {
                 //Spil slut
+                Moller.SetActive(false);
                 txt.turnOffObject();
                 conversationEnd = true;
             }
