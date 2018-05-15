@@ -7,6 +7,14 @@ public class TextManager : MonoBehaviour {
 
     public TextsMethods txt;
     public GameObject vis;
+
+    static public int An = 1;
+    static public int AnScene2 = 1;
+
+    static public bool conversationEnd = true;
+
+    public object Texts { get; internal set; }
+
     [Space(10)]
     [Header("Personer")]
     public GameObject Moller;
@@ -18,12 +26,13 @@ public class TextManager : MonoBehaviour {
     public GameObject Phone;
     public GameObject Karmen;
 
-    static public int An = 1;
-    static public int AnScene2 = 1;
+    [Space(10)]
+    [Header("buttons")]
+    public GameObject button1;
+    public GameObject button2;
+    public GameObject button3;
 
-    static public bool conversationEnd = true;
-
-    public object Texts { get; internal set; }
+    
 
     // Use this for initialization
     void Start() {
@@ -193,14 +202,22 @@ public class TextManager : MonoBehaviour {
                 Victoria.SetActive(true);
 
                 txt.setQuestion("“Hej, hvad kan jeg hjælpe dig med?”");
+                button1.SetActive(false);
+                button2.SetActive(true);
+                button3.SetActive(false);
                 txt.setText1("");
                 txt.setText2("“Hej Victoria, jeg har fundet hår, som skal analyseres.”");
                 txt.setText3("");
+
+                
             }
 
             if (An == 11)
             {
                 txt.setQuestion("“Vi kan undersøge DNA fra disse hår. Alle mennesker har unik DNA, så vi kan måske finde frem til gerningsmanden. Vi har travlt, så jeg har brug for din hjælp til at analysere det.”");
+                button1.SetActive(true);
+                button2.SetActive(false);
+                button3.SetActive(true);
                 txt.setText1("“Hvordan fungere DNA?”");
                 txt.setText2("");
                 txt.setText3("“Hvad skal jeg gøre?”");
@@ -617,13 +634,13 @@ public class TextManager : MonoBehaviour {
         //Button behavior
         if (txtBehavior.button1)
         {
-            if (txt.text1empty())
-            {
+            
+            
                 txtBehavior.button1 = false;
                 An++;
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2++;
-            }
+            
 				
         }
         else if (txtBehavior.button2)
@@ -635,14 +652,14 @@ public class TextManager : MonoBehaviour {
         }
         else if (txtBehavior.button3)
         {
-            if (txt.text3empty())
-            {
+           
+            
                 txt.setText3("nej!");
                 txtBehavior.button3 = false;
                 An = An + 100;
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2 = AnScene2 + 100;
-            }
+            
         }
     }
 
