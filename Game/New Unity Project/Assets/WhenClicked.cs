@@ -20,7 +20,7 @@ public class WhenClicked : MonoBehaviour {
 
     public void ButtonClick ()
     {
-        SceneManager.LoadScene(num);
-        
+		TextManager.An = 1;
+        SceneManager.LoadScene(num);        
     }
 }

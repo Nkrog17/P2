@@ -37,8 +37,9 @@ public class uWonText : MonoBehaviour {
     public void whenClicked()
     {
             
-            Debug.Log("now");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("now");
+        TextManager.An = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }
