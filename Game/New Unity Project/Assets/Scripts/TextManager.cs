@@ -348,7 +348,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("");
             }
 
-            if (An == 111)
+            if (An == 121 || An == 12)
             {
                 conversationEnd = true;
                 Kone.SetActive(false);
