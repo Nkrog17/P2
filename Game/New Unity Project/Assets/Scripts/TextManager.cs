@@ -24,7 +24,7 @@ public class TextManager : MonoBehaviour {
     public GameObject Victoria;
     public GameObject Kone;
     public GameObject Phone;
-    public GameObject Emma;
+    public GameObject Karmen;
 
     [Space(10)]
     [Header("buttons")]
