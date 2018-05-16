@@ -484,7 +484,6 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("");
                 txt.setText2("“Jeg tager traks afsted!”");
                 txt.setText3("");
-                conversationEnd = true;
             }
             if (An == 112 || An == 211 || An == 22)
             {
@@ -572,7 +571,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 1011 || An == 1110)
             {
-                txt.setQuestion("“Han kørte for X minutter siden og havde ikke travlt. Han kørte ved 60 kilometer i timen, som man må heromkring.”");
+                txt.setQuestion("“Han kørte for 5 minutter siden og havde ikke travlt. Han kørte vel med 60 kilometer i timen, som man må heromkring.”");
                 button1.SetActive(false);
                 button2.SetActive(true);
                 button3.SetActive(false);
