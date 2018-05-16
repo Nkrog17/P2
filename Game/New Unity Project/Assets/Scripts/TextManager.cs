@@ -24,7 +24,7 @@ public class TextManager : MonoBehaviour {
     public GameObject Victoria;
     public GameObject Kone;
     public GameObject Phone;
-    public GameObject Karmen;
+    public GameObject Emma;
 
     [Space(10)]
     [Header("buttons")]
@@ -43,7 +43,7 @@ public class TextManager : MonoBehaviour {
         Victoria.SetActive(false);
         Kone.SetActive(false);
         Phone.SetActive(false);
-        Karmen.SetActive(false);
+        Emma.SetActive(false);
     }
 
 
@@ -58,7 +58,7 @@ public class TextManager : MonoBehaviour {
             {
                 Phone.SetActive(true);
                 conversationEnd = false;
-                txt.setQuestion("“MIN DATTER! Karmen, hun… hun er væk!”");
+                txt.setQuestion("“MIN DATTER! Emma, hun… hun er væk!”");
                 button1.SetActive(true);
                 button2.SetActive(true);
                 button3.SetActive(true);
@@ -70,7 +70,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 2 || An == 11)
             {
-                txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Karmen kunne aldrig finde på at stikke af midt om natten”");
+                txt.setQuestion("“Ja, jeg er helt sikker! Hun er ikke på sit værelse og vinduet er åbent! Emma kunne aldrig finde på at stikke af midt om natten”");
                 button1.SetActive(false);
                 button2.SetActive(true);
                 button3.SetActive(false);
@@ -181,7 +181,7 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("");
             }
             if (An == 11) {
-                txt.setQuestion("“Karmen har lyst hår! Det er ikke hendes kam!”");
+                txt.setQuestion("“Emma har lyst hår! Det er ikke hendes kam!”");
                 button1.SetActive(false);
                 button2.SetActive(true);
                 button3.SetActive(false);
@@ -641,7 +641,7 @@ public class TextManager : MonoBehaviour {
                 button3.SetActive(true);
                 txt.setText1("“Jeg er fra Politiets Efterretningstjeneste!”");
                 txt.setText2("");
-                txt.setText3("“Frederik! Du er anholdt for kidnapningen af Karmen!”");
+                txt.setText3("“Frederik! Du er anholdt for kidnapningen af Emma!”");
             }
 
             if (An == 2 || An == 101)
@@ -663,7 +663,7 @@ public class TextManager : MonoBehaviour {
                 button3.SetActive(true);
                 txt.setText1("“Den tager vi på politistationen.”");
                 txt.setText2("");
-                txt.setText3("“Hvad laver Karmen så her?”");
+                txt.setText3("“Hvad laver Emma så her?”");
             }
 
             if (An == 4 || An == 103 || An == 202 || An == 301)
@@ -718,10 +718,10 @@ public class TextManager : MonoBehaviour {
                 txt.setText3("“Jeg er glad for, at kunne hjælpe!”");
             }
 
-            if (An == 2 || An == 101)//Karmen
+            if (An == 2 || An == 101)//Emma
             {
             	Moller.SetActive(false);
-            	Karmen.SetActive(true);
+            	Emma.SetActive(true);
                 txt.setQuestion("“Mange tusind tak! Jeg var så bange for, hvad der ville ske med mig! Hvad skete der med forbryderen?”");
                 button1.SetActive(true);
                 button2.SetActive(false);
@@ -733,7 +733,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 3 || An == 102 || An == 201)
             {
-            	Karmen.SetActive(false);
+            	Emma.SetActive(false);
             	Moller.SetActive(true);
                 txt.setQuestion("“Igen, tusind tak! Nu kan vi endelig slappe af. Du gjorde et godt stykke arbejde. Du overgik mine forventninger!”");
                 button1.SetActive(true);
