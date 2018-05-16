@@ -592,7 +592,7 @@ Prefab:
     - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
         type: 2}
       propertyPath: SceneName
-      value: PigenHjemIgen
+      value: PigenHjemmeIgen
       objectReference: {fileID: 0}
     - target: {fileID: 114869446307963192, guid: 354454e99e0d777499c0a257043ada77,
         type: 2}
