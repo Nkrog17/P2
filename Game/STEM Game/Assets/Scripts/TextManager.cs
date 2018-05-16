@@ -293,9 +293,9 @@ public class TextManager : MonoBehaviour {
             }
             if (An == 2 || An == 111) {
                 txt.setQuestion("“Han bor ikke langt herfra. Jeg skriver adressen ned til dig.”");
-                button1.SetActive(true);
-                button2.SetActive(false);
-                button3.SetActive(true);
+                button1.SetActive(false);
+                button2.SetActive(true);
+                button3.SetActive(false);
                 txt.setText1("");
                 txt.setText2("“Jeg tager ud og besøger ham straks!”");
                 txt.setText3("");
