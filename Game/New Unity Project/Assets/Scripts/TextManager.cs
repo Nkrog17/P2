@@ -43,7 +43,7 @@ public class TextManager : MonoBehaviour {
         Victoria.SetActive(false);
         Kone.SetActive(false);
         Phone.SetActive(false);
-        Emma.SetActive(false);
+        Karmen.SetActive(false);
     }
 
 
@@ -721,7 +721,7 @@ public class TextManager : MonoBehaviour {
             if (An == 2 || An == 101)//Emma
             {
             	Moller.SetActive(false);
-            	Emma.SetActive(true);
+            	Karmen.SetActive(true);
                 txt.setQuestion("“Mange tusind tak! Jeg var så bange for, hvad der ville ske med mig! Hvad skete der med forbryderen?”");
                 button1.SetActive(true);
                 button2.SetActive(false);
@@ -733,7 +733,7 @@ public class TextManager : MonoBehaviour {
 
             if (An == 3 || An == 102 || An == 201)
             {
-            	Emma.SetActive(false);
+            	Karmen.SetActive(false);
             	Moller.SetActive(true);
                 txt.setQuestion("“Igen, tusind tak! Nu kan vi endelig slappe af. Du gjorde et godt stykke arbejde. Du overgik mine forventninger!”");
                 button1.SetActive(true);
