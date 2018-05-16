@@ -17,6 +17,7 @@ public class PhoneBehaviour : MonoBehaviour {
     {
         FindObjectOfType<click>().playClick();
         change.GetComponent<TextsMethods>().turnOnObject();
-            //change.SetActive(true);
+        //change.SetActive(true);
+        Destroy(ring);
     }
 }
