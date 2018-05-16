@@ -9,7 +9,7 @@ public class ButtonWithSceneIndexAsAug : MonoBehaviour {
 	public bool Fade;
 	public string SceneName;
 
-    public void OnMouseDown() {
+    public void OnMouseUpAsButton() {
 		if (TextManager.conversationEnd) {
 
             FindObjectOfType<click>().playClick();
