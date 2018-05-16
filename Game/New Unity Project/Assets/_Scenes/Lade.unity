@@ -635,7 +635,7 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "En stor, rusten plot til at sp\xE6nde bag p\xE5 en traktor. "
+      value: "En stor, rusten plov til at sp\xE6nde bag p\xE5 en traktor. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}

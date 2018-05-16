@@ -864,8 +864,8 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "Det er for m\xF8rkt til, jeg kan se, hvad det er. Jeg m\xE5 f\xE5 lyset
-        til at virke f\xF8rst."
+      value: "Det er for m\xF8rkt til, jeg kan se, hvad det er. Jeg m\xE5 f\xE5 lyskontakten
+        virker ikke. Det skal t\xE6ndes fra et andet sted."
       objectReference: {fileID: 0}
     - target: {fileID: 1272278517362162, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
       propertyPath: m_Name
@@ -953,7 +953,7 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "Jeg kan ikke se, hvad det er. Jeg skal f\xF8rst have lyset til at virke."
+      value: "Lyskontakten virker ikke og jeg kan ikke se noget. Er str\xF8mmet g\xE5et?"
       objectReference: {fileID: 0}
     - target: {fileID: 1272278517362162, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
       propertyPath: m_Name
