@@ -201,7 +201,6 @@ public class TextManager : MonoBehaviour {
         //Scene 5: Kælder
         else if (SceneManager.GetActiveScene().buildIndex == 5)
         {
-            txt.turnOnObject();
             conversationEnd = true;
 
             if (opAdTrappenBehaviour.light)
