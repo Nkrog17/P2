@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneSwitch: 0
   Fade: 0
-  SceneName: 
+  SceneName: "K\xE6lder"
 --- !u!65 &145945339
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -871,6 +871,26 @@ Prefab:
       propertyPath: m_Name
       value: "m\xF8rke"
       objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.3222184
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.37187347
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.6356577
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.029983899
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
   m_IsPrefabParent: 0
@@ -938,6 +958,26 @@ Prefab:
     - target: {fileID: 1272278517362162, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
       propertyPath: m_Name
       value: "m\xF8rke2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.3015568
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.34088394
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.4797418
+      objectReference: {fileID: 0}
+    - target: {fileID: 65316610843641126, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.05996727
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
