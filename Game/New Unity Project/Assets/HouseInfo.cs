@@ -10,6 +10,7 @@ public class HouseInfo : MonoBehaviour {
 
     void OnMouseDown()
     {
+        FindObjectOfType<click>().playClick();
         info.SetActive(true);
         houseText.SetActive(true);
     }

@@ -20,7 +20,8 @@ public class WhenClicked : MonoBehaviour {
 
     public void ButtonClick ()
     {
-		TextManager.An = 1;
+        FindObjectOfType<click>().playClick();
+        TextManager.An = 1;
 		Initiate.Fade ("Lade", Color.black, 2.0f);       
     }
 }
