@@ -11,7 +11,7 @@ public class opAdTrappenBehaviour : MonoBehaviour {
     public int SceneNumNoLight;
     public int activeScene;
 
-    private void OnMouseDown()
+    private void OnMouseUpAsButton()
     {
         if (TextManager.conversationEnd)
         {
