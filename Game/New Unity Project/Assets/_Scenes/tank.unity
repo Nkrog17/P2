@@ -723,7 +723,7 @@ Prefab:
         type: 2}
       propertyPath: beskrivelse
       value: "Det ser ud til, at jeg kan k\xF8be en fransk hotdog og en kop kaffe
-        for kroner. Dyrt... "
+        for 45 kroner. Dyrt... "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}

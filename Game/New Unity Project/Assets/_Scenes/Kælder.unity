@@ -233,7 +233,7 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "En kasse og t\xF8nde til opbevaring. Det har sikkert s\xE5et her l\xE6nge."
+      value: "En kasse og t\xF8nde til opbevaring. Det har sikkert st\xE5et her l\xE6nge."
       objectReference: {fileID: 0}
     - target: {fileID: 4417240090422724, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
       propertyPath: m_LocalScale.x

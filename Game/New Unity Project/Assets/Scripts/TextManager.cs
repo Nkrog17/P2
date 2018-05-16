@@ -257,13 +257,13 @@ public class TextManager : MonoBehaviour {
                 txt.setText1("");
                 txt.setText2("“Okay.”");
                 txt.setText3("");
-                conversationEnd = true;
 
             }
 
             if (An >= 22 && An != 111)
             {
                 Victoria.SetActive(false);
+                conversationEnd = true;
                 txt.turnOffObject();
             }
         }
@@ -296,11 +296,11 @@ public class TextManager : MonoBehaviour {
                 button1.SetActive(true);
                 button2.SetActive(false);
                 button3.SetActive(true);
-                txt.setText1("“Har vi mere information om ham?”");
-                txt.setText2("");
-                txt.setText3("“Jeg tager ud og besøger ham straks!”");
+                txt.setText1("");
+                txt.setText2("“Jeg tager ud og besøger ham straks!”");
+                txt.setText3("");
             }
-            if (An == 3 || An == 102 || An == 112 || An == 211)
+            if (An == 12 || An == 121)
             {
                 conversationEnd = true;
                 Victoria.SetActive(false);
