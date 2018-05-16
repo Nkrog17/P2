@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class PhoneBehaviour : MonoBehaviour {
 
     public GameObject change;
+	public AudioSource ring;
+
+	void Start(){
+		ring.Play();		
+	}
 
 
     void OnMouseDown()

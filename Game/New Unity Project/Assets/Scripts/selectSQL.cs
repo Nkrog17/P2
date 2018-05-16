@@ -27,6 +27,7 @@ public class selectSQL : MonoBehaviour {
 		} else {
 			RemoveFromList ();
 		}
+		FindObjectOfType<click>().playClick();
 	}
 
 	void AddToList(){

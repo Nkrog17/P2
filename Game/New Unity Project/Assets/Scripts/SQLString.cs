@@ -50,6 +50,7 @@ public class SQLString : MonoBehaviour {
     }
 
 	public void checkSQL () {
+		FindObjectOfType<click>().playClick();
 		errorstring.SetActive (false);
 		bool error = false;
 		//Check if the SQL is right.
