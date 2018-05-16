@@ -145,7 +145,7 @@ public class TextManager : MonoBehaviour {
 
 			if (AnScene2 == 3 || AnScene2 == 102 || An == 101)
             {
-                txt.setQuestion("“På hendes værelse, ovenpå. Men du er velkommen til at kigge dig omkring i huset, hvis det er nødvendigt.”");
+                txt.setQuestion("“Jeg så hende sidst på sit værelse, ovenpå. Men du er velkommen til at kigge dig omkring i huset, hvis det er nødvendigt.”");
                 button1.SetActive(false);
                 button2.SetActive(true);
                 button3.SetActive(false);
@@ -233,7 +233,7 @@ public class TextManager : MonoBehaviour {
                 button1.SetActive(true);
                 button2.SetActive(false);
                 button3.SetActive(true);
-                txt.setText1("“Hvordan fungere DNA?”");
+                txt.setText1("“Hvordan fungerer DNA?”");
                 txt.setText3("“Hvad skal jeg gøre?”");
             }
 
@@ -293,9 +293,9 @@ public class TextManager : MonoBehaviour {
             }
             if (An == 2 || An == 111) {
                 txt.setQuestion("“Han bor ikke langt herfra. Jeg skriver adressen ned til dig.”");
-                button1.SetActive(false);
-                button2.SetActive(true);
-                button3.SetActive(false);
+                button1.SetActive(true);
+                button2.SetActive(false);
+                button3.SetActive(true);
                 txt.setText1("");
                 txt.setText2("“Jeg tager ud og besøger ham straks!”");
                 txt.setText3("");
@@ -426,7 +426,7 @@ public class TextManager : MonoBehaviour {
             }
 
             if (An == 1111 || An == 1022) {
-                txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med?");
+                txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med? Men i dette tilfælde sorterer vi i tabellen \"personbiler\" og leder efter navnet, Ulrik Olsen.");
                 button1.SetActive(true);
                 button2.SetActive(false);
                 button3.SetActive(true);
@@ -481,7 +481,7 @@ public class TextManager : MonoBehaviour {
                 button2.SetActive(true);
                 button3.SetActive(false);
                 txt.setText1("");
-                txt.setText2("“Jeg tager traks afsted!”");
+                txt.setText2("“Jeg tager straks afsted!”");
                 txt.setText3("");
             }
             if (An == 112 || An == 211 || An == 22)
