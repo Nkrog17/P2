@@ -14,9 +14,9 @@ public class RadiusSliderSpeed : MonoBehaviour
 
     public void TextUpdate(float value)
     {
-        value = value/5 * 100;
+        value = value/5 * 10;
         value = Mathf.RoundToInt(value);
-        value = value / 100;
+        value = value / 10;
         sliderValue.text = ""+value;
     }
 }
