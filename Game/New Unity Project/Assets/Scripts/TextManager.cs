@@ -426,7 +426,7 @@ public class TextManager : MonoBehaviour {
             }
 
             if (An == 1111 || An == 1022) {
-                txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med?");
+                txt.setQuestion("SELECT * FROM tabel WHERE farve = grøn. Her vælger vi alt fra ‘tabel’, og leder efter information med ‘farve’ som er lig med ‘grøn’. Er du med? Men i dette tilfælde sorterer vi i tabellen \"personbiler\" og leder efter navnet, Ulrik Olsen.");
                 button1.SetActive(true);
                 button2.SetActive(false);
                 button3.SetActive(true);
