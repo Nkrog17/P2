@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c92ca780fd2d444b0940b40694d238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneSwitch: 1
+  SceneSwitch: 0
   Fade: 0
   SceneName: DNApuzzle
 --- !u!70 &677590947

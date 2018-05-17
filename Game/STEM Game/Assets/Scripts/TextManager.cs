@@ -268,6 +268,11 @@ public class TextManager : MonoBehaviour {
             }
         }
 
+        else if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            conversationEnd = true;
+        }
+        
         //scene 8: Efter DNA-spil
         else if (SceneManager.GetActiveScene().buildIndex == 8) {
             if (An == 1) {
