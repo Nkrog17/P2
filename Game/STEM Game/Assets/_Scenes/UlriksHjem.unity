@@ -884,7 +884,7 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "Der er mange forskellige b\xF8ger i reolen. Blandt andet Robinsom Crusoe"
+      value: "Der er mange forskellige b\xF8ger i reolen. Blandt andet Robinson Crusoe"
       objectReference: {fileID: 0}
     - target: {fileID: 1272278517362162, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
       propertyPath: m_Name
