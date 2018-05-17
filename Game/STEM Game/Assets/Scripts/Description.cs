@@ -7,6 +7,7 @@ public class Description : MonoBehaviour {
 
 	public string beskrivelse;
 	public GameObject descriptionbox;
+	public int duration = 150;
 	bool showing = false;
 	Text textbox;
 	int timer;
@@ -21,7 +22,7 @@ public class Description : MonoBehaviour {
 	void Update () {
 		if (showing) {
 			timer += 1;
-			if (timer >= 150) {
+			if (timer >= duration){
 				showing = false;
 				timer = 0;
 				descriptionbox.SetActive (false);
