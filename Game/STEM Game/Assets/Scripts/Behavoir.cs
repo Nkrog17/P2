@@ -14,12 +14,15 @@ public class Behavoir : MonoBehaviour
 
     public GameObject red, blue, green, purple;
 
+
+
     public string Col;
 
     public static int numberOfCollidersCorrect;
 
     void Update()
     {
+
         CheckPos(-5.5f, 5.5f, 4.5f, -4.5f);
 
     }
@@ -74,6 +77,7 @@ public class Behavoir : MonoBehaviour
 
         if (other.tag.Equals("Moveable") && gameObject.tag.Equals("Untagged"))
         {
+            
             Behavoir temp = other.gameObject.GetComponent<Behavoir>();
             BoxCollider boxcolliderOther = other.GetComponent<BoxCollider>();
             BoxCollider boxcolliderThisObject = GetComponent<BoxCollider>();
@@ -82,6 +86,8 @@ public class Behavoir : MonoBehaviour
                 if (Col.Equals("red") && temp.Col.Equals("green"))
                 {
                     Debug.Log("red and green");
+                    
+                    FindObjectOfType<correctSound>().PlayTheSound();
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
@@ -90,11 +96,13 @@ public class Behavoir : MonoBehaviour
 
 
                     boxcolliderThisObject.enabled = !boxcolliderThisObject.enabled;
+                    
                     other.gameObject.tag = "Not Moveable";
                 }
                 else if (Col.Equals("green") && temp.Col.Equals("red"))
                 {
                     Debug.Log("green and red");
+                    FindObjectOfType<correctSound>().PlayTheSound();
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
@@ -102,36 +110,42 @@ public class Behavoir : MonoBehaviour
                     boxcolliderOther.isTrigger = true;
 
                     boxcolliderThisObject.enabled = !boxcolliderThisObject.enabled;
-
+                    
                     other.gameObject.tag = "Not Moveable";
                 }
                 else if (Col.Equals("blue") && temp.Col.Equals("purple"))
                 {
                     Debug.Log("blue and purple");
+                    FindObjectOfType<correctSound>().PlayTheSound();
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
                     boxcolliderOther.isTrigger = true;
 
                     boxcolliderThisObject.enabled = !boxcolliderThisObject.enabled;
+                    
                     other.gameObject.tag = "Not Moveable";
                 }
                 else if (Col.Equals("purple") && temp.Col.Equals("blue"))
                 {
                     Debug.Log("purple and blue");
+
+                    FindObjectOfType<correctSound>().PlayTheSound();
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
                     boxcolliderOther.isTrigger = true;
 
                     boxcolliderThisObject.enabled = !boxcolliderThisObject.enabled;
-
                     other.gameObject.tag = "Not Moveable";
                 }
                 else
                 {
                     //numberOfCollidersCorrect --;
                     other.gameObject.tag = "Moveable";
+                    Debug.Log("now!");
+                    
+                    
                 }
             }
             Debug.Log(numberOfCollidersCorrect);
