@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1578272817611620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.301131, y: 0.40323967, z: 0}
+  m_LocalPosition: {x: -3.288219, y: -0.33889985, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 6.29345}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,6 +91,8 @@ MonoBehaviour:
   blue: {fileID: 1411657143872224, guid: 7d477d8ad2872ab478306961fb7be856, type: 2}
   green: {fileID: 1578272817611620}
   purple: {fileID: 1782589433682842, guid: b61b7d630b561ad4d9c5ec63b873b92e, type: 2}
+  audioManger: {fileID: 1419989365258204, guid: d0bad178bed8f3e49841f8c5b024674b,
+    type: 2}
   Col: green
 --- !u!212 &212478790292650950
 SpriteRenderer:
