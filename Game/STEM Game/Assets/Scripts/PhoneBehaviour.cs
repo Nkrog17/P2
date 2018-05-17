@@ -7,6 +7,7 @@ public class PhoneBehaviour : MonoBehaviour {
 
     public GameObject change;
 	public AudioSource ring;
+    public GameObject keys;
 
 	void Start(){
 		ring.Play();		
@@ -18,6 +19,7 @@ public class PhoneBehaviour : MonoBehaviour {
         FindObjectOfType<click>().playClick();
         change.GetComponent<TextsMethods>().turnOnObject();
         //change.SetActive(true);
+        keys.SetActive(true);
         Destroy(ring);
     }
 }
