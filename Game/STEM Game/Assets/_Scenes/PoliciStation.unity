@@ -283,6 +283,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &744576112 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1831907266913182, guid: 354454e99e0d777499c0a257043ada77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1187343582}
 --- !u!1 &1108930667 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1396076762158960, guid: da3d3c707368acf468c94809cda37048,
@@ -441,6 +446,10 @@ Prefab:
     - target: {fileID: 4062644477510900, guid: 354454e99e0d777499c0a257043ada77, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831907266913182, guid: 354454e99e0d777499c0a257043ada77, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 354454e99e0d777499c0a257043ada77, type: 2}
@@ -654,6 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beskrivelse: "En gammel computer. Vi burde f\xE5 nogle nye!"
   descriptionbox: {fileID: 1468280259}
+  duration: 150
 --- !u!65 &1581367228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1009,6 +1019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   change: {fileID: 1108930667}
   ring: {fileID: 1641032562}
+  keys: {fileID: 744576112}
 --- !u!1 &1960979287
 GameObject:
   m_ObjectHideFlags: 0

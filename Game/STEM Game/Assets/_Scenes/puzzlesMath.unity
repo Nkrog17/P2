@@ -877,10 +877,15 @@ Prefab:
     - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
         type: 2}
       propertyPath: beskrivelse
-      value: "Tilpas sliders med den information som er givet. S\xE6t slideren som
+      value: "Tilpas sliderne med den information som er givet. S\xE6t slideren som
         angiver tiden til 5 og hastigheden til 60. Derefter kan radius slideren i
         toppen tilpasses til formlens resultat for at se hvilke huse den mist\xE6nkte
         kan have bes\xF8gt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496623035005986, guid: b8ae6ae72c6039742b14c5716c9602d4,
+        type: 2}
+      propertyPath: duration
+      value: 750
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8ae6ae72c6039742b14c5716c9602d4, type: 2}
