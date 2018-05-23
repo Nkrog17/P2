@@ -20,7 +20,7 @@ public class WhenClicked : MonoBehaviour {
 
     public void ButtonClick ()
     {
-        FindObjectOfType<click>().playClick();
+        FindObjectOfType<SoundPlayer>().playSound("Click");
         TextManager.An = 1;
 		Initiate.Fade ("Lade", Color.black, 2.0f);       
     }

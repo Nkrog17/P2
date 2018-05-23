@@ -27,8 +27,8 @@ public class selectSQL : MonoBehaviour {
 		} else {
 			RemoveFromList ();
 		}
-		FindObjectOfType<click>().playClick();
-	}
+        FindObjectOfType<SoundPlayer>().playSound("Click");
+    }
 
 	void AddToList(){
 		currentlist.GetComponent<SQLString>().sqlList.Add(this.gameObject);

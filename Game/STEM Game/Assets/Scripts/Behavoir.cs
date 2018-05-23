@@ -80,8 +80,8 @@ public class Behavoir : MonoBehaviour
                 if (Col.Equals("red") && temp.Col.Equals("green"))
                 {
                     Debug.Log("red and green");
-                    
-                    FindObjectOfType<correctSound>().PlayTheSound();
+
+                    FindObjectOfType<SoundPlayer>().playSound("Correct");
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
@@ -96,7 +96,7 @@ public class Behavoir : MonoBehaviour
                 else if (Col.Equals("green") && temp.Col.Equals("red"))
                 {
                     Debug.Log("green and red");
-                    FindObjectOfType<correctSound>().PlayTheSound();
+                    FindObjectOfType<SoundPlayer>().playSound("Correct");
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
@@ -110,7 +110,7 @@ public class Behavoir : MonoBehaviour
                 else if (Col.Equals("blue") && temp.Col.Equals("purple"))
                 {
                     Debug.Log("blue and purple");
-                    FindObjectOfType<correctSound>().PlayTheSound();
+                    FindObjectOfType<SoundPlayer>().playSound("Correct");
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
@@ -124,7 +124,7 @@ public class Behavoir : MonoBehaviour
                 {
                     Debug.Log("purple and blue");
 
-                    FindObjectOfType<correctSound>().PlayTheSound();
+                    FindObjectOfType<SoundPlayer>().playSound("Correct");
                     numberOfCollidersCorrect += 1;
 
                     other.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);

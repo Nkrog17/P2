@@ -16,7 +16,7 @@ public class PhoneBehaviour : MonoBehaviour {
 
     void OnMouseDown()
     {
-        FindObjectOfType<click>().playClick();
+        FindObjectOfType<SoundPlayer>().playSound("Click");
         change.GetComponent<TextsMethods>().turnOnObject();
         //change.SetActive(true);
         keys.SetActive(true);

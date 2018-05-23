@@ -32,7 +32,7 @@ public class Description : MonoBehaviour {
 
 	void OnMouseDown (){
 		if (TextManager.conversationEnd) {
-            FindObjectOfType<click>().playClick();
+            FindObjectOfType<SoundPlayer>().playSound("Click");
             timer = 0;
 			descriptionbox.SetActive (true);
 			textbox.text = beskrivelse;

@@ -36,7 +36,7 @@ public class uWonText : MonoBehaviour {
 
     public void whenClicked()
     {
-        FindObjectOfType<click>().playClick();
+        FindObjectOfType<SoundPlayer>().playSound("Click");
         Debug.Log("now");
         TextManager.An = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -764,9 +764,9 @@ public class TextManager : MonoBehaviour {
                 An++;
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2++;
-            FindObjectOfType<click>().playClick();
-            
-				
+            FindObjectOfType<SoundPlayer>().playSound("Click");
+
+
         }
         else if (txtBehavior.button2)
         {
@@ -774,8 +774,8 @@ public class TextManager : MonoBehaviour {
             An = An + 10;
             if (SceneManager.GetActiveScene().buildIndex == 2)
                 AnScene2 = AnScene2 + 10;
-            FindObjectOfType<click>().playClick();
-           
+            FindObjectOfType<SoundPlayer>().playSound("Click");
+
         }
         else if (txtBehavior.button3)
         {
@@ -786,8 +786,8 @@ public class TextManager : MonoBehaviour {
                 An = An + 100;
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                     AnScene2 = AnScene2 + 100;
-            FindObjectOfType<click>().playClick();
-            
+            FindObjectOfType<SoundPlayer>().playSound("Click");
+
 
         }
     }

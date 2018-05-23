@@ -22,7 +22,8 @@ public class kam : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		kamClicked = true;
+        FindObjectOfType<SoundPlayer>().playSound("Click");
+        kamClicked = true;
 		backicon.SetActive (false);
 		keyicon.SetActive (true);
 		kamobject.SetActive (false);

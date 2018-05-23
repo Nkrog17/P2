@@ -12,7 +12,7 @@ public class ButtonWithSceneIndexAsAug : MonoBehaviour {
     public void OnMouseUpAsButton() {
 		if (TextManager.conversationEnd) {
 
-            FindObjectOfType<click>().playClick();
+            FindObjectOfType<SoundPlayer>().playSound("Click");
 
             if (SceneSwitch)
 				TextManager.An = 1;

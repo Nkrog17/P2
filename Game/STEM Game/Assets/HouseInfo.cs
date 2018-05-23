@@ -10,7 +10,7 @@ public class HouseInfo : MonoBehaviour {
 
     void OnMouseDown()
     {
-        FindObjectOfType<click>().playClick();
+        FindObjectOfType<SoundPlayer>().playSound("Click");
         info.SetActive(true);
         houseText.SetActive(true);
     }
