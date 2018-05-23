@@ -760,8 +760,6 @@ public class TextManager : MonoBehaviour {
         //Button behavior
         if (txtBehavior.button1)
         {
-            
-            
                 txtBehavior.button1 = false;
                 An++;
                 if (SceneManager.GetActiveScene().buildIndex == 2)

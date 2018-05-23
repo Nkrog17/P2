@@ -22,3 +22,5 @@ public class ClickSound : MonoBehaviour {
         clickSource.Play();
     }
 }
+
+//bliver måske ikke brugt

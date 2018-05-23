@@ -10,12 +10,6 @@ public class Behavoir : MonoBehaviour
     public Vector3 screenPoint;
     public Vector3 offset;
 
-    public GameObject redMoveble, blueMoveable, purpleMoveable, greenMoveable;
-
-    public GameObject red, blue, green, purple;
-
-
-
     public string Col;
 
     public static int numberOfCollidersCorrect;
